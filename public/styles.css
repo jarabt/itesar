@@ -1,15 +1,13 @@
-/* .container {
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  gap: 20px;
-} */
+}
 body {
   background-image: url("pattern.svg");
   font-family: "Roboto", sans-serif;
 }
-.container {
+.grid-container {
   display: grid;
   grid-template-columns: 326px 326px 326px;
   grid-template-rows: 100px 1fr 1fr;
