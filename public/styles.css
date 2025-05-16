@@ -66,5 +66,6 @@ img {
   .me,
   img {
     height: auto;
+    width: auto;
   }
 }
