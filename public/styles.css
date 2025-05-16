@@ -1,17 +1,17 @@
+body {
+  background-image: url("pattern.svg");
+  font-family: "Roboto", sans-serif;
+}
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-body {
-  background-image: url("pattern.svg");
-  font-family: "Roboto", sans-serif;
-}
 .grid-container {
   display: grid;
   grid-template-columns: 326px 326px 326px;
   grid-template-rows: 100px 1fr 1fr;
-  gap: 3rem;
+  gap: 2rem;
 }
 h1 {
   font-family: "Annie Use Your Telescope", cursive;
@@ -24,7 +24,6 @@ h1 {
   background-color: antiquewhite;
   border-radius: 20px;
 }
-
 h2 {
   text-align: center;
 }
@@ -48,12 +47,19 @@ img {
 }
 
 @media (max-width: 1000px) {
-  .container {
+  .grid-container {
+    display: flex;
     flex-direction: column;
     height: 100%;
   }
+  /* .container {
+    flex-direction: column;
+    height: 100%;
+  } */
   .left,
-  .right {
+  .right,
+  .me,
+  img {
     height: auto;
   }
 }
