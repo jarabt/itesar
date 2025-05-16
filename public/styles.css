@@ -10,7 +10,7 @@ body {
 .grid-container {
   display: grid;
   grid-template-columns: 326px 326px 326px;
-  grid-template-rows: 100px 1fr 1fr;
+  grid-template-rows: 70px 1fr 1fr;
   gap: 2rem;
 }
 h1 {
@@ -23,6 +23,7 @@ h1 {
 .right {
   background-color: antiquewhite;
   border-radius: 20px;
+  padding: 10px;
 }
 h2 {
   text-align: center;
