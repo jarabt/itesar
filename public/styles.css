@@ -20,13 +20,17 @@ h1 {
   text-align: center;
 }
 .left,
-.right {
+.right,
+.me {
   background-color: antiquewhite;
   border-radius: 20px;
   padding: 10px;
 }
 h2 {
   text-align: center;
+}
+.contact {
+  list-style: none;
 }
 
 /* .left,
