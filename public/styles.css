@@ -9,24 +9,36 @@ body {
   background-image: url("pattern.svg");
   font-family: "Roboto", sans-serif;
 }
-
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 326px 326px 326px;
+  grid-template-rows: 100px 1fr 1fr;
+  gap: 3rem;
 }
+h1 {
+  font-family: "Annie Use Your Telescope", cursive;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  text-align: center;
+}
+.left,
+.right {
+  background-color: antiquewhite;
+  border-radius: 20px;
+}
+
 h2 {
   text-align: center;
 }
 
-.left,
+/* .left,
 .right {
   width: 326px;
   height: 492px;
   background-color: antiquewhite;
   border-radius: 20px;
   padding: 5px;
-}
+} */
 .me {
   width: 492px;
   height: 326px;
@@ -36,11 +48,7 @@ h2 {
 img {
   border-radius: 20px;
 }
-h1 {
-  font-family: "Annie Use Your Telescope", cursive;
-  grid-column-start: 1;
-  grid-column-end: 4;
-}
+
 @media (max-width: 1000px) {
   .container {
     flex-direction: column;
