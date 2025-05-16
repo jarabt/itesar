@@ -1,17 +1,24 @@
-.container {
+/* .container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   gap: 20px;
-}
+} */
 body {
   background-image: url("pattern.svg");
   font-family: "Roboto", sans-serif;
 }
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
 h2 {
   text-align: center;
 }
+
 .left,
 .right {
   width: 326px;
@@ -31,6 +38,8 @@ img {
 }
 h1 {
   font-family: "Annie Use Your Telescope", cursive;
+  grid-column-start: 1;
+  grid-column-end: 4;
 }
 @media (max-width: 1000px) {
   .container {
