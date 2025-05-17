@@ -10,11 +10,14 @@ body {
 .grid-container {
   display: grid;
   grid-template-columns: 340px 340px 340px;
-  grid-template-rows: 70px 1fr 1fr;
+  grid-template-rows: 180px 1fr 1fr;
   gap: 2rem;
 }
 h1 {
-  font-family: "Annie Use Your Telescope", cursive;
+  font-family: "Mansalva", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 70px;
   grid-column-start: 1;
   grid-column-end: 4;
   text-align: center;
