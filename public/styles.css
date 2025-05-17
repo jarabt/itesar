@@ -31,7 +31,9 @@ h2 {
   border-style: solid;
   border-width: 7px;
 }
-
+.text-card {
+  padding: 7px;
+}
 .me {
   width: 492px;
   height: 326px;
@@ -43,10 +45,6 @@ h2 {
     flex-direction: column;
     height: 100%;
   }
-  /* .container {
-    flex-direction: column;
-    height: 100%;
-  } */
   .left,
   .right,
   .me,
