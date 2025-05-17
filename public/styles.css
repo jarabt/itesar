@@ -49,10 +49,7 @@ h2 {
     flex-direction: column;
     height: 100%;
   }
-  .left,
-  .right,
-  .me,
-  img {
+  .card {
     height: auto;
     width: auto;
   }
