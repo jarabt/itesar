@@ -36,7 +36,7 @@ h2 {
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
 }
 .text-card {
-  padding: 7px;
+  padding: 9px;
 }
 .me {
   width: 492px;
@@ -44,6 +44,7 @@ h2 {
 }
 .portrait-card {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
