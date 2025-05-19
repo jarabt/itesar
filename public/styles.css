@@ -10,7 +10,7 @@ body {
 .grid-container {
   display: grid;
   grid-template-columns: 340px 340px 340px;
-  grid-template-rows: 180px 1fr 1fr;
+  grid-template-rows: 180px 492px 1fr;
   gap: 2rem;
 }
 h1 {
@@ -41,6 +41,14 @@ h2 {
 .me {
   width: 492px;
   height: 326px;
+}
+.portrait-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  width: 200px;
 }
 
 @media (max-width: 1000px) {
