@@ -48,7 +48,8 @@ h2 {
 img {
   width: 200px;
 }
-.me {
+.me,
+.right {
   width: 492px;
 }
 @media (max-width: 1100px) {
