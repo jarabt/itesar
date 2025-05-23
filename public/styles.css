@@ -5,6 +5,12 @@ body {
 }
 #blue-section {
   background-color: #6eacda;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 30vh;
+  width: 100%;
+  z-index: -1;
 }
 .container {
   display: flex;
