@@ -45,9 +45,10 @@ body {
 }
 .container-pricing {
   display: flex;
+  justify-content: space-around;
 }
 .price-card {
-  width: 50%;
+  width: 492px;
 }
 h1 {
   font-family: "Mansalva", cursive;
