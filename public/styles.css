@@ -103,7 +103,7 @@ img {
   grid-column-start: 3;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1300px) {
   .grid-container {
     display: flex;
     flex-direction: column;
