@@ -116,3 +116,10 @@ img {
     font-size: 40px;
   }
 }
+
+@media (max-width: 800px) {
+  .container-pricing {
+    flex-direction: column;
+    align-items: center;
+  }
+}
