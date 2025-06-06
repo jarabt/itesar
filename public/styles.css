@@ -48,7 +48,7 @@ body {
   justify-content: space-around;
 }
 .price-card {
-  width: 492px;
+  max-width: 492px;
 }
 h1 {
   font-family: "Mansalva", cursive;
@@ -115,11 +115,16 @@ img {
   h1 {
     font-size: 40px;
   }
+  .price-card {
+    width: 50%;
+  }
 }
-
 @media (max-width: 800px) {
   .container-pricing {
     flex-direction: column;
     align-items: center;
+  }
+  .price-card {
+    width: 100%;
   }
 }
