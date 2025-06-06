@@ -100,14 +100,6 @@ img {
 .me {
   width: 492px;
 }
-.basic-price {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  width: 492px;
-}
-.standard-price {
-  grid-column-start: 3;
-}
 
 @media (max-width: 1300px) {
   .grid-container {
