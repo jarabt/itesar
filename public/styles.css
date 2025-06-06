@@ -52,6 +52,18 @@ h1 {
   grid-column-end: 4;
   text-align: center;
 }
+.price-title {
+  font-family: "Mansalva", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  text-align: center;
+}
+.p-title {
+  text-align: center;
+}
 h2 {
   text-align: center;
 }
