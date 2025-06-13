@@ -95,12 +95,12 @@ h1 {
 .me {
   width: 492px;
 }
-.contact {
+#contact {
   list-style: none;
 }
 
 /* index.ejs - Pricing */
-.pricing {
+#pricing {
   display: flex;
   justify-content: center;
   align-items: center;
