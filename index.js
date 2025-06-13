@@ -6,7 +6,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 app.get("/", (req, res) => {
-  res.render("./partials/header.ejs");
+  res.render("./index.ejs");
 });
 
 app.get("/basic-package", (req, res) => {
