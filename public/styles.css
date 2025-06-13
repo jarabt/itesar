@@ -1,6 +1,20 @@
+/* Global Styles */
 body {
   font-family: "Roboto", sans-serif;
 }
+h2 {
+  text-align: center;
+}
+
+/* header.ejs */
+.navbar a {
+  text-decoration: none;
+}
+.menu-item {
+  display: inline-block;
+}
+
+/* index.ejs - Title */
 #title {
   background-color: #6eacda;
   position: absolute;
@@ -10,24 +24,17 @@ body {
   width: 100%;
   z-index: -1;
 }
-#footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 5vh;
-  background-color: #6eacda;
-  width: 100%;
-  position: absolute;
-  left: 0px;
-  z-index: -1;
-  margin-top: 50px;
+h1 {
+  font-family: "Mansalva", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 70px;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  text-align: center;
 }
-.navbar a {
-  text-decoration: none;
-}
-.menu-item {
-  display: inline-block;
-}
+
+/* index.ejs - About */
 .container-about {
   display: flex;
   justify-content: center;
@@ -39,39 +46,6 @@ body {
   grid-template-rows: 492px 340px;
   gap: 20px;
   margin-top: 20vh;
-}
-.container-pricing {
-  display: flex;
-  justify-content: space-around;
-}
-.price-card {
-  max-width: 492px;
-}
-h1 {
-  font-family: "Mansalva", cursive;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 70px;
-  grid-column-start: 1;
-  grid-column-end: 4;
-  text-align: center;
-}
-.price-title {
-  font-family: "Mansalva", cursive;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 30px;
-  grid-column-start: 1;
-  grid-column-end: 4;
-}
-.p-title {
-  text-align: center;
-}
-h2 {
-  text-align: center;
-}
-.contact {
-  list-style: none;
 }
 .card {
   background-color: #e2e2b6;
@@ -101,10 +75,47 @@ h2 {
 .me {
   width: 492px;
 }
+.contact {
+  list-style: none;
+}
+
+/* index.ejs - Pricing */
+.container-pricing {
+  display: flex;
+  justify-content: space-around;
+}
+.price-card {
+  max-width: 492px;
+}
+.price-title {
+  font-family: "Mansalva", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.p-title {
+  text-align: center;
+}
 .info-icon {
   width: 50px;
   height: 50px;
   margin-left: 10px;
+}
+
+/* footer.ejs */
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+  background-color: #6eacda;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  z-index: -1;
+  margin-top: 50px;
 }
 
 @media (max-width: 1300px) {
