@@ -1,142 +1,91 @@
-<!DOCTYPE html>
-<html lang="cs">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Nabízím tvorbu webových stránek, aplikací a online poradenství v regionu Prostějov, Olomouc a Přerov. Vaše prezentace na internetu může konečně fungovat."
-    />
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-ENJSZC257Q"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-ENJSZC257Q");
-    </script>
-    <link rel="shortcut icon" href="./favicon.ico" sizes="any" />
-    <title>Jaroslav Tesař</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mansalva&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
-    <!-- Title -->
-    <section id="title">
-      <h1>Stavím Internetové věci</h1>
-    </section>
-    <!-- About -->
-    <div class="container-about">
-      <div class="grid-container">
-        <div class="left card text-card">
-          <h2>SLUŽBY</h2>
-          <ul>
-            <li>tvorba: Internetové stránky</li>
-            <li>poradím: Použití sociálních sítí</li>
-            <li>poradím: Jak být na Google</li>
-            <li>tvorba: Chytré stránky</li>
-          </ul>
-        </div>
-        <div class="card text-card">
-          <h2>Ing. Jaroslav Tesař</h2>
-          <div class="portrait-card">
-            <img
-              class="my-foto"
-              src="my-foto2025-06-12.jpg"
-              alt="foto Jaroslav Tesař"
-            />
-          </div>
-        </div>
-        <div class="right card text-card">
-          <h2>CO UMÍ CHYTRÉ STRÁNKY</h2>
-          <ul>
-            <li>Uchovávat bezpečně vaše seznamy (např. zákazníků)</li>
-            <li>Tyto seznamy jsou přístupné odkudkoliv (třeba z mobilu)</li>
-            <li>Práce se seznamy - vyhledávání apod.</li>
-            <li>Návštěvníci vám posílají odtud zprávy na email</li>
-            <li>
-              Přes svoje heslo můžete do stránky vkládat data, články apod.
-            </li>
-          </ul>
-        </div>
-        <div class="me card text-card">
-          <h2>O MNĚ</h2>
-          <ul>
-            <li>přes 5 let v programátorských firmách</li>
-            <li>vystudoval marketing a obchod</li>
-            <li>kurz marketingu na internetu</li>
-            <li>kurz tvorby chytrých internetových stránek</li>
-          </ul>
-          <ul class="contact">
-            <li>tel.: 723250858</li>
-            <li>email: jarabt@seznam.cz</li>
-          </ul>
-        </div>
+<%- include('partials/header') %>
+<div class="container-about">
+  <div class="grid-container">
+    <div class="left card text-card">
+      <h2>SLUŽBY</h2>
+      <ul>
+        <li>tvorba: Internetové stránky</li>
+        <li>poradím: Použití sociálních sítí</li>
+        <li>poradím: Jak být na Google</li>
+        <li>tvorba: Chytré stránky</li>
+      </ul>
+    </div>
+    <div class="card text-card">
+      <h2>Ing. Jaroslav Tesař</h2>
+      <div class="portrait-card">
+        <img
+          class="my-foto"
+          src="my-foto2025-06-12.jpg"
+          alt="foto Jaroslav Tesař"
+        />
       </div>
     </div>
-    <!-- Pricing -->
-    <br />
-    <br />
-    <section id="pricing">
-      <div class="container-pricing">
-        <div class="price-card">
-          <h2>
-            <span class="price-title">Základní balíček</span><br />1500,- Kč
-          </h2>
-          <p class="p-title">INTERNETOVÁ PREZENTACE</p>
-          <ul>
-            <li>design</li>
-            <li>vložení zákazníkových textů</li>
-            <li>vložení zákazníkových fotek</li>
-            <li>vložení zákazníkova loga (ve formátu .svg)</li>
-            <li>1 stránka, s maximálně 5-ti sekcemi</li>
-            <li>nastavení hostingu</li>
-            <li>termín 2 týdny</li>
-          </ul>
-          <a href="#">
-            <img class="info-icon" src="info-icon.png" alt="Základní balíček" />
-          </a>
-        </div>
-        <div class="price-card">
-          <h2>
-            <span class="price-title">Standardní balíček</span><br />6000,- Kč
-          </h2>
-          <p class="p-title">WEBOVÁ APLIKACE</p>
-          <ul>
-            <li>design</li>
-            <li>vložení zákazníkových textů</li>
-            <li>vložení zákazníkových fotek</li>
-            <li>vložení zákazníkova loga (ve formátu .svg)</li>
-            <li>maximálně 3 stránky</li>
-            <li>menu</li>
-            <li>
-              možnost vkládání obsahu zákazníkem přes svůj login a formulář
-              (nebo jiná jedna funkcionalita)
-            </li>
-            <li>nastavení hostingu</li>
-            <li>termín 3 týdny</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <!-- Footer -->
-    <section id="footer">
-      Copyright © <%= new Date().getFullYear() %> Jaroslav Tesař
-    </section>
-  </body>
-</html>
+    <div class="right card text-card">
+      <h2>CO UMÍ CHYTRÉ STRÁNKY</h2>
+      <ul>
+        <li>Uchovávat bezpečně vaše seznamy (např. zákazníků)</li>
+        <li>Tyto seznamy jsou přístupné odkudkoliv (třeba z mobilu)</li>
+        <li>Práce se seznamy - vyhledávání apod.</li>
+        <li>Návštěvníci vám posílají odtud zprávy na email</li>
+        <li>Přes svoje heslo můžete do stránky vkládat data, články apod.</li>
+      </ul>
+    </div>
+    <div class="me card text-card">
+      <h2>O MNĚ</h2>
+      <ul>
+        <li>přes 5 let v programátorských firmách</li>
+        <li>vystudoval marketing a obchod</li>
+        <li>kurz marketingu na internetu</li>
+        <li>kurz tvorby chytrých internetových stránek</li>
+      </ul>
+      <ul class="contact">
+        <li>tel.: 723250858</li>
+        <li>email: jarabt@seznam.cz</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- Pricing -->
+<br />
+<br />
+<section id="pricing">
+  <div class="container-pricing">
+    <div class="price-card">
+      <h2><span class="price-title">Základní balíček</span><br />1500,- Kč</h2>
+      <p class="p-title">INTERNETOVÁ PREZENTACE</p>
+      <ul>
+        <li>design</li>
+        <li>vložení zákazníkových textů</li>
+        <li>vložení zákazníkových fotek</li>
+        <li>vložení zákazníkova loga (ve formátu .svg)</li>
+        <li>1 stránka, s maximálně 5-ti sekcemi</li>
+        <li>nastavení hostingu</li>
+        <li>termín 2 týdny</li>
+      </ul>
+      <a href="#">
+        <img class="info-icon" src="info-icon.png" alt="Základní balíček" />
+      </a>
+    </div>
+    <div class="price-card">
+      <h2>
+        <span class="price-title">Standardní balíček</span><br />6000,- Kč
+      </h2>
+      <p class="p-title">WEBOVÁ APLIKACE</p>
+      <ul>
+        <li>design</li>
+        <li>vložení zákazníkových textů</li>
+        <li>vložení zákazníkových fotek</li>
+        <li>vložení zákazníkova loga (ve formátu .svg)</li>
+        <li>maximálně 3 stránky</li>
+        <li>menu</li>
+        <li>
+          možnost vkládání obsahu zákazníkem přes svůj login a formulář (nebo
+          jiná jedna funkcionalita)
+        </li>
+        <li>nastavení hostingu</li>
+        <li>termín 3 týdny</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<%- include('partials/footer') %>
