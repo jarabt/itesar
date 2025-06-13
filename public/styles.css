@@ -7,10 +7,18 @@ h2 {
 }
 
 /* header.ejs */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* navbar.ejs */
 .container-header {
   display: flex;
   align-items: center;
   height: 7vh;
+  width: 1212px;
 }
 .menu-item {
   text-decoration: none;
