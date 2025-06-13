@@ -100,12 +100,19 @@ h1 {
 }
 
 /* index.ejs - Pricing */
+.pricing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .container-pricing {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 90%;
 }
 .price-card {
-  max-width: 492px;
+  /* max-width: 492px; */
+  width: 40%;
 }
 .price-title {
   font-family: "Mansalva", cursive;
