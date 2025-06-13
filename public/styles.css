@@ -22,6 +22,12 @@ body {
   z-index: -1;
   margin-top: 50px;
 }
+.navbar a {
+  text-decoration: none;
+}
+.menu-item {
+  display: inline-block;
+}
 .container-about {
   display: flex;
   justify-content: center;
