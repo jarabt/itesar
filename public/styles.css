@@ -17,8 +17,9 @@ h2 {
 .container-header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   height: 7vh;
-  width: 1212px;
+  width: 90%;
 }
 .menu-item {
   text-decoration: none;
