@@ -131,6 +131,18 @@ h1 {
   margin-left: 10px;
 }
 
+/* -package.ejs */
+.package {
+  display: flex;
+  justify-content: center;
+}
+.container-package {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 90%;
+}
+
 /* footer.ejs */
 #footer {
   display: flex;
