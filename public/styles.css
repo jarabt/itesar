@@ -84,10 +84,11 @@ h1 {
   align-items: center;
 }
 .my-foto {
-  width: 200px;
-  border-radius: 10px;
+  /* width: 200px; */
+  height: 488px;
+  /* border-radius: 10px;
   border-style: solid;
-  border-width: 2px;
+  border-width: 2px; */
 }
 .right {
   height: 300px;
