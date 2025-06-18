@@ -139,6 +139,10 @@ h1 {
   align-items: flex-start;
   width: 90%;
 }
+dt {
+  font-size: 20px;
+  margin-top: 10px;
+}
 
 /* footer.ejs */
 #footer {
