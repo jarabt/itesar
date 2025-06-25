@@ -1,5 +1,17 @@
 import express from "express";
+import winston from "winston";
 
+const logger = winston.createLogger({
+  level: "info",
+  format: winston.format.combine(
+    winston.format.timestamp(),
+    winston.format.json()
+  ),
+  transports: [
+    new winston.transports.Console(),
+    new winston.transports.File({ filename: "app.log" }),
+  ],
+});
 const app = express();
 const port = 3000;
 app.use(express.urlencoded({ extended: true }));
@@ -25,5 +37,6 @@ app.get("/basic-package", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Server running on port ${port}`);
+  //console.log(`Server running on port ${port}`);
+  logger.info(`Server running on port ${port}`);
 });
