@@ -29,14 +29,7 @@ app.use(express.static("public"));
 // });
 
 app.get("/", (req, res) => {
-  const visit = {
-    timestamp: new Date().toISOString(),
-    ip: req.ip,
-    url: req.originalUrl,
-    userAgent: req.get("User-Agent"),
-    referrer: req.get("Referer") || "Direct",
-  };
-  //logger.info("New visit", { visit });
+  // Log the request IP address
   logger.info(req.headers["x-forwarded-for"] || req.socket.remoteAddress);
   res.render("./index.ejs");
 });
