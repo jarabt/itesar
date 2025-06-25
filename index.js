@@ -36,7 +36,8 @@ app.get("/", (req, res) => {
     userAgent: req.get("User-Agent"),
     referrer: req.get("Referer") || "Direct",
   };
-  logger.info("New visit", { visit });
+  //logger.info("New visit", { visit });
+  logger.info(req.headers["x-forwarded-for"] || req.socket.remoteAddress);
   res.render("./index.ejs");
 });
 
