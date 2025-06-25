@@ -29,6 +29,14 @@ app.use(express.static("public"));
 // });
 
 app.get("/", (req, res) => {
+  const visit = {
+    timestamp: new Date().toISOString(),
+    ip: req.ip,
+    url: req.originalUrl,
+    userAgent: req.get("User-Agent"),
+    referrer: req.get("Referer") || "Direct",
+  };
+  logger.info("New visit", { visit });
   res.render("./index.ejs");
 });
 
