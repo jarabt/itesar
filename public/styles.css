@@ -55,7 +55,7 @@ h2 {
 h1 {
   /* transform: rotate(2deg); */
   /* animation: oscillate 1s ease-in-out infinite; */
-  animation: oscillate 3s ease-in-out;
+  animation: oscillate 5s ease-in-out infinite;
   font-family: "Mansalva", cursive;
   font-weight: 400;
   font-style: normal;
@@ -65,7 +65,7 @@ h1 {
   text-align: center;
 }
 h1:hover {
-  animation: oscillate 3s ease-out infinite;
+  animation: oscillate 1s linear infinite;
 }
 
 /* index.ejs - About */
@@ -242,13 +242,13 @@ dt {
   0% {
     transform: rotate(0deg);
   }
-  33% {
+  10% {
     transform: rotate(-2deg);
   }
-  66% {
+  20% {
     transform: rotate(2deg);
   }
-  100% {
+  30% {
     transform: rotate(0deg);
   }
 }
