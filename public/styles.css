@@ -145,7 +145,12 @@ dt {
 }
 
 /* footer.ejs */
-#footer {
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -157,8 +162,21 @@ dt {
   z-index: -1;
   margin-top: 50px;
 }
-#footer a {
+.container-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+.footer a {
   margin-left: 10px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+.social-media-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Responsive Styles */
