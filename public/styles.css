@@ -149,11 +149,6 @@ dt {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 6vh;
   background-color: #6eacda;
   width: 100%;
@@ -175,6 +170,9 @@ dt {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.copyright {
+  padding: 10px;
 }
 
 /* Responsive Styles */
