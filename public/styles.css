@@ -157,7 +157,11 @@ dt {
   z-index: -1;
   margin-top: 50px;
 }
+#footer a {
+  margin-left: 10px;
+}
 
+/* Responsive Styles */
 @media (max-width: 1300px) {
   .grid-container {
     display: flex;
