@@ -29,12 +29,26 @@ app.use(express.static("public"));
 // });
 
 app.get("/", (req, res) => {
-  // Log the request IP address
-  logger.info(req.headers["x-forwarded-for"] || req.socket.remoteAddress);
+  // Log the visitor
+  const visit = {
+    url: req.originalUrl,
+    ip: req.headers["x-forwarded-for"] || req.socket.remoteAddress,
+    referrer: req.get("Referer") || "Direct",
+    userAgent: req.get("User-Agent"),
+  };
+  logger.info(visit);
   res.render("./index.ejs");
 });
 
 app.get("/basic-package", (req, res) => {
+  // Log the visitor
+  const visit = {
+    url: req.originalUrl,
+    ip: req.headers["x-forwarded-for"] || req.socket.remoteAddress,
+    referrer: req.get("Referer") || "Direct",
+    userAgent: req.get("User-Agent"),
+  };
+  logger.info(visit);
   res.render("basic-package.ejs");
 });
 
