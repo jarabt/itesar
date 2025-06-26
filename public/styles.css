@@ -154,7 +154,7 @@ dt {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 5vh;
+  height: 6vh;
   background-color: #6eacda;
   width: 100%;
   position: absolute;
@@ -169,8 +169,6 @@ dt {
   width: 90%;
 }
 .footer a {
-  margin-left: 10px;
-  margin-right: 10px;
   text-decoration: none;
 }
 .social-media-icons {
