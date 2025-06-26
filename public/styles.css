@@ -65,8 +65,7 @@ h1 {
   text-align: center;
 }
 h1:hover {
-  color: red;
-  animation: oscillate 3s ease-in-out infinite;
+  animation: oscillate 3s ease-out infinite;
 }
 
 /* index.ejs - About */
