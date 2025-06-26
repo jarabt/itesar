@@ -44,6 +44,14 @@ h2 {
   width: 100%;
   z-index: -1;
 }
+#title-z {
+  position: absolute;
+  top: 9vh;
+  left: 0px;
+  height: 30vh;
+  width: 100%;
+  z-index: 10;
+}
 h1 {
   /* transform: rotate(2deg); */
   /* animation: oscillate 1s ease-in-out infinite; */
@@ -55,6 +63,10 @@ h1 {
   grid-column-start: 1;
   grid-column-end: 4;
   text-align: center;
+}
+h1:hover {
+  color: red;
+  animation: oscillate 3s ease-in-out;
 }
 
 /* index.ejs - About */
