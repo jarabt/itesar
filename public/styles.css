@@ -158,21 +158,23 @@ dt {
   margin-top: 50px;
 }
 .container-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   width: 90%;
 }
 .footer a {
   text-decoration: none;
 }
+.copyright {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  text-align: center;
+  padding: 10px;
+}
 .social-media-icons {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-}
-.copyright {
-  padding: 10px;
 }
 
 /* Responsive Styles */
