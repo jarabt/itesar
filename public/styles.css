@@ -45,7 +45,8 @@ h2 {
   z-index: -1;
 }
 h1 {
-  transform: rotate(2deg);
+  /* transform: rotate(2deg); */
+  animation: oscillate 1s ease-in-out infinite;
   font-family: "Mansalva", cursive;
   font-weight: 400;
   font-style: normal;
@@ -221,5 +222,18 @@ dt {
 @media (max-width: 400px) {
   .menu-item {
     font-size: 17px;
+  }
+}
+
+/* Animations */
+@keyframes oscillate {
+  0% {
+    transform: rotate(2deg);
+  }
+  50% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(2deg);
   }
 }
