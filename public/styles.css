@@ -194,6 +194,9 @@ dt {
   .price-card {
     width: 50%;
   }
+  .footer {
+    height: 7vh;
+  }
 }
 @media (max-width: 800px) {
   .container-pricing {
@@ -205,6 +208,13 @@ dt {
   }
   .price-card {
     width: 100%;
+  }
+  .container-footer {
+    grid-template-columns: 1fr 1fr;
+  }
+  .copyright {
+    grid-column-start: 1;
+    grid-column-end: 2;
   }
 }
 @media (max-width: 400px) {
