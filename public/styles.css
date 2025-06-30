@@ -44,13 +44,16 @@ h2 {
   width: 100%;
   z-index: -1;
 }
-#title-z {
+.title-z {
   position: absolute;
   top: 9vh;
   left: 0px;
   height: 30vh;
   width: 100%;
   z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 h1 {
   /* transform: rotate(2deg); */
@@ -243,10 +246,10 @@ dt {
     transform: rotate(0deg);
   }
   10% {
-    transform: rotate(-2deg);
+    transform: rotate(-4deg);
   }
   20% {
-    transform: rotate(2deg);
+    transform: rotate(4deg);
   }
   30% {
     transform: rotate(0deg);
