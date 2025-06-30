@@ -161,6 +161,12 @@ dt {
   margin-top: 10px;
 }
 
+/* contact.ejs */
+input,
+textarea {
+  margin: 10px;
+}
+
 /* footer.ejs */
 .footer {
   display: flex;
