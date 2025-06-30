@@ -3,6 +3,19 @@ import winston from "winston";
 import env from "dotenv";
 import nodemailer from "nodemailer";
 
+const app = express();
+env.config();
+const port = process.env.APP_PORT;
+const transporter = nodemailer.createTransport({
+  host: process.env.SMTP_SERVER,
+  port: process.env.SMTP_PORT,
+  secure: false, // true for port 465, false for other ports
+  auth: {
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASSWORD,
+  },
+});
+
 const logger = winston.createLogger({
   level: "info",
   format: winston.format.combine(
@@ -14,8 +27,7 @@ const logger = winston.createLogger({
     new winston.transports.File({ filename: "app.log" }),
   ],
 });
-const app = express();
-const port = 3000;
+
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 // app.use((req, res, next) => {
@@ -76,6 +88,22 @@ app.get("/standard-package", (req, res) => {
   };
   logger.info(visit);
   res.render("standard-package.ejs");
+});
+
+app.post("/message", async (req, res) => {
+  try {
+    const info = await transporter.sendMail({
+      from: '"Plynoservis 👻" <plynoservis@plynoservis.cz>', // sender address
+      to: process.env.EMAIL_RECEIVER, // list of receivers
+      subject: "Message form plynoservis website", // Subject line
+      text: req.body.message, // plain text body
+      // html: "<b>Hello world?</b>", // html body
+    });
+    console.log(info);
+  } catch (err) {
+    console.log(err);
+  }
+  res.redirect("/");
 });
 
 app.listen(port, () => {
