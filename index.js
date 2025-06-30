@@ -1,5 +1,7 @@
 import express from "express";
 import winston from "winston";
+import env from "dotenv";
+import nodemailer from "nodemailer";
 
 const logger = winston.createLogger({
   level: "info",
