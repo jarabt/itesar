@@ -100,9 +100,9 @@ app.post("/message", async (req, res) => {
       // text: req.body.message, // plain text body
       html: `<b>Sender's name: </b>${req.body.name}<br><b>Sender's email: </b>${req.body.email}<br><b>Message: </b>${req.body.message}`, // html body
     });
-    console.log(info);
+    logger.info(info);
   } catch (err) {
-    console.log(err);
+    logger.error(err);
   }
   res.redirect("/");
 });
