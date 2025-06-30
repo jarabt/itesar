@@ -40,6 +40,18 @@ app.get("/", (req, res) => {
   res.render("./index.ejs");
 });
 
+app.get("/contact", (req, res) => {
+  // Log the visitor
+  const visit = {
+    url: req.originalUrl,
+    ip: req.headers["x-forwarded-for"] || req.socket.remoteAddress,
+    referrer: req.get("Referer") || "Direct",
+    userAgent: req.get("User-Agent"),
+  };
+  logger.info(visit);
+  res.render("contact.ejs");
+});
+
 app.get("/basic-package", (req, res) => {
   // Log the visitor
   const visit = {
