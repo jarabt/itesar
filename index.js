@@ -90,14 +90,15 @@ app.get("/standard-package", (req, res) => {
   res.render("standard-package.ejs");
 });
 
+// Endpoint to handle form submission - this is where the email will be sent
 app.post("/message", async (req, res) => {
   try {
     const info = await transporter.sendMail({
-      from: '"Plynoservis 👻" <plynoservis@plynoservis.cz>', // sender address
+      from: "jarabt@seznam.cz", // sender address
       to: process.env.EMAIL_RECEIVER, // list of receivers
-      subject: "Message form plynoservis website", // Subject line
-      text: req.body.message, // plain text body
-      // html: "<b>Hello world?</b>", // html body
+      subject: "Message from itesar.cz website", // Subject line
+      // text: req.body.message, // plain text body
+      html: `<b>Sender's name: </b>${req.body.name}<br><b>Sender's email: </b>${req.body.email}<br><b>Message: </b>${req.body.message}`, // html body
     });
     console.log(info);
   } catch (err) {
