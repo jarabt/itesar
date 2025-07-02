@@ -169,6 +169,10 @@ textarea {
   border-width: 0px;
   font: inherit;
 }
+input:focus,
+textarea:focus {
+  outline: none;
+}
 button {
   /* button,
 input[type="submit"],
