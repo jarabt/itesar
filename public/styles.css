@@ -164,9 +164,13 @@ dt {
 /* contact.ejs */
 .form-card {
   display: flex;
-  /* flex-direction: column; */
-  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   align-items: center;
+}
+.form-card-small-item {
+  width: 180px;
 }
 input,
 textarea {
