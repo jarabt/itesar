@@ -165,6 +165,9 @@ dt {
 input,
 textarea {
   margin: 10px;
+  border-radius: 5px;
+  border-width: 0px;
+  font: inherit;
 }
 button {
   /* button,
@@ -177,13 +180,9 @@ input[type="reset"] { */
   font: inherit;
   cursor: pointer;
   outline: inherit;
-  margin: 16px 0;
-}
-input,
-textarea {
-  border-radius: 10px;
-  border-style: solid;
-  border-width: 2px;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px;
 }
 
 /* footer.ejs */
