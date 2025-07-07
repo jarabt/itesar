@@ -29,6 +29,10 @@
   width: 180px;
   margin-right: 20px;
 }
+textarea {
+  width: 400px;
+  height: 100px;
+}
 input,
 textarea {
   margin: 10px;
@@ -50,4 +54,14 @@ button {
   font-weight: bold;
   font-size: 20px;
   padding: 10px;
+}
+
+@media (max-width: 800px) {
+}
+
+@media (max-width: 400px) {
+  textarea {
+    width: 180px;
+    margin-right: 20px;
+  }
 }
