@@ -161,44 +161,6 @@ dt {
   margin-top: 10px;
 }
 
-/* contact.ejs */
-.form-card {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
-}
-.form-card-small-item {
-  width: 180px;
-}
-input,
-textarea {
-  margin: 10px;
-  border-radius: 5px;
-  border-width: 0px;
-  font: inherit;
-}
-input:focus,
-textarea:focus {
-  outline: none;
-}
-button {
-  /* button,
-input[type="submit"],
-input[type="reset"] { */
-  background: none;
-  color: inherit;
-  border: none;
-  /* padding: 0; */
-  font: inherit;
-  cursor: pointer;
-  outline: inherit;
-  font-weight: bold;
-  font-size: 20px;
-  padding: 10px;
-}
-
 /* footer.ejs */
 .footer {
   display: flex;

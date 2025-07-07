@@ -2,31 +2,31 @@
 <div class="sub-page">
   <div class="container-sub-page">
     <h2 class="sub-title">Kontakt</h2>
-    <div class="card contact-card">
-      <!-- <form action="/message" method="post"> -->
-      <div class="form-card-small-item">
-        <label for="name"><b>JMÉNO</b></label
-        ><br />
-        <input type="text" id="name" name="name" />
+    <form action="/message" method="post">
+      <div class="card contact-card">
+        <div class="form-card-small-item">
+          <label for="name"><b>JMÉNO</b></label
+          ><br />
+          <input type="text" id="name" name="name" />
+        </div>
+        <div class="form-card-small-item">
+          <label for="email"><b>EMAIL</b></label
+          ><br />
+          <input type="email" id="email" name="email" />
+        </div>
+        <div class="form-card-small-item">
+          <label for="tel"><b>TELEFON</b></label
+          ><br />
+          <input type="tel" id="tel" name="tel" />
+        </div>
+        <div>
+          <label for="message"><b>VZKAZ</b></label
+          ><br />
+          <textarea id="message" name="message" rows="7" cols="53"></textarea>
+        </div>
+        <button><b>Odeslat</b></button>
       </div>
-      <div class="form-card-small-item">
-        <label for="email"><b>EMAIL</b></label
-        ><br />
-        <input type="email" id="email" name="email" />
-      </div>
-      <div class="form-card-small-item">
-        <label for="tel"><b>TELEFON</b></label
-        ><br />
-        <input type="tel" id="tel" name="tel" />
-      </div>
-      <div>
-        <label for="message"><b>VZKAZ</b></label
-        ><br />
-        <textarea id="message" name="message" rows="7" cols="53"></textarea>
-      </div>
-    </div>
-    <button><b>Odeslat</b></button>
-    <!-- </form> -->
+    </form>
   </div>
 </div>
 <%- include('partials/footer') %>
