@@ -23,8 +23,9 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
+  margin-bottom: 16px;
 }
-.form-card-small-item {
+.contact-card-small-item {
   width: 180px;
   margin-right: 20px;
 }
