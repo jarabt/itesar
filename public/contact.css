@@ -16,8 +16,8 @@
 }
 .contact-card {
   padding: 20px;
-  width: 492px;
-  height: 300px;
+  max-width: 492px;
+  max-height: 300px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
