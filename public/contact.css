@@ -16,8 +16,6 @@
 }
 .contact-card {
   padding: 20px;
-  max-width: 492px;
-  max-height: 300px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -28,10 +26,6 @@
 .contact-card-small-item {
   width: 180px;
   margin-right: 20px;
-}
-textarea {
-  width: 400px;
-  height: 100px;
 }
 input,
 textarea {
@@ -56,12 +50,8 @@ button {
   padding: 10px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 540px) {
 }
 
 @media (max-width: 400px) {
-  textarea {
-    width: 180px;
-    margin-right: 20px;
-  }
 }
