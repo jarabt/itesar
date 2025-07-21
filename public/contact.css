@@ -20,12 +20,15 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 6px;
 }
 .contact-card-small-item {
   width: 180px;
   margin-right: 20px;
+}
+textarea {
+  height: 150px;
 }
 input,
 textarea {
