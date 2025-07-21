@@ -27,6 +27,10 @@
   width: 180px;
   margin-right: 20px;
 }
+.contact-card textarea {
+  width: 220px;
+}
+
 textarea {
   height: 150px;
 }
