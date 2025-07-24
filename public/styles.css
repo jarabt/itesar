@@ -129,6 +129,8 @@ h1:hover {
   width: 40%;
 }
 .price-card a {
+  display: flex;
+  align-items: center;
   text-decoration: none;
   color: #03346e;
   font-weight: bold;
