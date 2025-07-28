@@ -101,6 +101,20 @@ app.get("/standard-package", (req, res) => {
   });
 });
 
+app.get("/about", (req, res) => {
+  // Log the visitor
+  const visit = {
+    url: req.originalUrl,
+    ip: req.headers["x-forwarded-for"] || req.socket.remoteAddress,
+    referrer: req.get("Referer") || "Direct",
+    userAgent: req.get("User-Agent"),
+  };
+  logger.info(visit);
+  res.render("about.ejs", {
+    title: "itesar.cz Jaroslav Tesař | Vzdělání a zkušenosti",
+  });
+});
+
 // Endpoint to handle form submission - this is where the email will be sent
 app.post("/message", async (req, res) => {
   try {
