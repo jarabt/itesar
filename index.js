@@ -51,7 +51,10 @@ app.get("/", (req, res) => {
     userAgent: req.get("User-Agent"),
   };
   logger.info(visit);
-  res.render("./index.ejs");
+  res.render("./index.ejs", {
+    title:
+      "itesar.cz Jaroslav Tesař | Tvorba webových stránek Prostějov, Olomouc, Přerov",
+  });
 });
 
 app.get("/contact", (req, res) => {
@@ -63,7 +66,9 @@ app.get("/contact", (req, res) => {
     userAgent: req.get("User-Agent"),
   };
   logger.info(visit);
-  res.render("contact.ejs");
+  res.render("contact.ejs", {
+    title: "itesar.cz Jaroslav Tesař | Kontaktní formulář",
+  });
 });
 
 app.get("/basic-package", (req, res) => {
@@ -75,7 +80,10 @@ app.get("/basic-package", (req, res) => {
     userAgent: req.get("User-Agent"),
   };
   logger.info(visit);
-  res.render("basic-package.ejs");
+  res.render("basic-package.ejs", {
+    title:
+      "itesar.cz Jaroslav Tesař | Internetové stránky Prostějov, Olomouc, Přerov",
+  });
 });
 
 app.get("/standard-package", (req, res) => {
@@ -87,7 +95,10 @@ app.get("/standard-package", (req, res) => {
     userAgent: req.get("User-Agent"),
   };
   logger.info(visit);
-  res.render("standard-package.ejs");
+  res.render("standard-package.ejs", {
+    title:
+      "itesar.cz Jaroslav Tesař | Webové aplikace Prostějov, Olomouc, Přerov",
+  });
 });
 
 // Endpoint to handle form submission - this is where the email will be sent
