@@ -1,44 +1,19 @@
 <%- include('partials/header') %>
 <div class="sub-page">
   <div class="container-sub-page">
-    <h2 class="sub-title">Kontakt</h2>
-    <form action="/message" method="post">
-      <div class="card contact-card">
-        <div>
-          <div class="contact-card-small-item">
-            <label for="name"><b>JMÉNO</b></label
-            ><br />
-            <input type="text" id="name" name="name" />
-          </div>
-          <div class="contact-card-small-item">
-            <label for="email"><b>EMAIL</b></label
-            ><br />
-            <input type="email" id="email" name="email" />
-          </div>
-          <div class="contact-card-small-item">
-            <label for="tel"><b>TELEFON</b></label
-            ><br />
-            <input type="tel" id="tel" name="tel" />
-          </div>
-        </div>
-        <div>
-          <label for="message"><b>VZKAZ</b></label
-          ><br />
-          <textarea id="message" name="message"></textarea>
-        </div>
-      </div>
-      <button><b>Odeslat</b></button>
-    </form>
-    <br />
-    <br />
-    <dl>
-      <dt>Telefon</dt>
-      <dd>723 250 858</dd>
-      <dt>Email</dt>
-      <dd>jarabt@seznam.cz</dd>
-      <dt>Adresa</dt>
-      <dd>Pod Kosířem 71, Prostějov</dd>
-    </dl>
+    <h2 class="sub-title">Vzdělání</h2>
+    <div class="card-thumb">
+      <img src="udemy-thumb.png" alt="Certifikát z Udemy" />
+    </div>
+    <div class="card-thumb">
+      <img src="certifikat-thumb.png" alt="Osvědčení z Online Marketigu" />
+    </div>
+    <div class="card-thumb">
+      <img src="osvedceni1-thumb.png" alt="Osvědčení z Online Marketigu" />
+    </div>
+    <div class="card-thumb">
+      <img src="osvedceni2-thumb.png" alt="Osvědčení z Online Marketigu" />
+    </div>
   </div>
 </div>
 <%- include('partials/footer') %>
