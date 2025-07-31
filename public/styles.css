@@ -36,12 +36,12 @@ h2 {
 
 /* from copilot */
 /* ...existing code... */
-.container-header {
+/* .container-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
-}
+} */
 .menu {
   display: flex;
   gap: 1rem;
