@@ -8,6 +8,12 @@
   align-items: flex-start;
   width: 90%;
 }
+.container-thumbs {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
 .sub-title {
   font-family: "Mansalva", cursive;
   font-weight: 400;
