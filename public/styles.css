@@ -58,6 +58,7 @@ h2 {
     display: none;
     flex-direction: column;
     position: absolute;
+    z-index: 100;
     top: 60px; /* adjust as needed */
     right: 1rem;
     background: white;
