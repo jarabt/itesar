@@ -117,7 +117,25 @@ app.get("/about", (req, res) => {
 
 app.get("/udemy-certificate", (req, res) => {
   res.render("certificate-udemy.ejs", {
-    title: "itesar.cz Jaroslav Tesař | Udemy kurzy",
+    title: "itesar.cz Jaroslav Tesař | Full-stack Web Developer kurz",
+  });
+});
+
+app.get("/online-marketing-completed", (req, res) => {
+  res.render("online-marketing-completed.ejs", {
+    title: "itesar.cz Jaroslav Tesař | Online marketing absolvován",
+  });
+});
+
+app.get("/online-marketing-qualification-1", (req, res) => {
+  res.render("online-marketing-qualification-1.ejs", {
+    title: "itesar.cz Jaroslav Tesař | Online marketing kvalifikace",
+  });
+});
+
+app.get("/online-marketing-qualification-2", (req, res) => {
+  res.render("online-marketing-qualification-2.ejs", {
+    title: "itesar.cz Jaroslav Tesař | Online marketing kvalifikace",
   });
 });
 
