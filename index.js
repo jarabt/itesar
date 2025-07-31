@@ -115,6 +115,12 @@ app.get("/about", (req, res) => {
   });
 });
 
+app.get("/udemy-certificate", (req, res) => {
+  res.render("certificate-udemy.ejs", {
+    title: "itesar.cz Jaroslav Tesař | Udemy kurzy",
+  });
+});
+
 // Endpoint to handle form submission - this is where the email will be sent
 app.post("/message", async (req, res) => {
   try {
