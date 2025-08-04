@@ -139,6 +139,12 @@ app.get("/online-marketing-qualification-2", (req, res) => {
   });
 });
 
+app.get("/mentoring", (req, res) => {
+  res.render("mentoring.ejs", {
+    title: "itesar.cz Jaroslav Tesař | Mentoring, konzultace a poradenství",
+  });
+});
+
 // Endpoint to handle form submission - this is where the email will be sent
 app.post("/message", async (req, res) => {
   try {
