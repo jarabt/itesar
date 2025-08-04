@@ -363,7 +363,7 @@ button {
     font-size: 17px;
   } */
 }
-@media (max-width: 500px) {
+@media (max-width: 640px) {
   .menu {
     display: none;
     flex-direction: column;
