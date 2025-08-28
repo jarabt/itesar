@@ -70,6 +70,8 @@ app.get("/contact", (req, res) => {
   logger.info(visit);
   res.render("contact.ejs", {
     title: "itesar.cz Jaroslav Tesař | Kontaktní formulář",
+    description:
+      "Máte zájem o tvorbu webových stránek, aplikací nebo online poradenství? Kontaktujte mě pomocí kontaktního formuláře.",
   });
 });
 
@@ -85,6 +87,8 @@ app.get("/basic-package", (req, res) => {
   res.render("basic-package.ejs", {
     title:
       "itesar.cz Jaroslav Tesař | Internetové stránky Prostějov, Olomouc, Přerov",
+    description:
+      "Základní balíček tvorby webových stránek zahrnuje internetovou prezentaci s až 5 sekcemi, responzivní design a základní SEO optimalizaci.",
   });
 });
 
@@ -100,6 +104,8 @@ app.get("/standard-package", (req, res) => {
   res.render("standard-package.ejs", {
     title:
       "itesar.cz Jaroslav Tesař | Webové aplikace Prostějov, Olomouc, Přerov",
+    description:
+      "Standardní balíček tvorby webových stránek zahrnuje webovou aplikaci s jednou funkcionalitou (s možností rozšíření na více), responzivní design a základní SEO optimalizaci.",
   });
 });
 
@@ -114,36 +120,48 @@ app.get("/about", (req, res) => {
   logger.info(visit);
   res.render("about.ejs", {
     title: "itesar.cz Jaroslav Tesař | Vzdělání a zkušenosti",
+    description:
+      "Jmenuji se Jaroslav Tesař a jsem webový vývojář z Prostějova. Mám zkušenosti s tvorbou webových stránek a aplikací, online marketingem a SEO optimalizací.",
   });
 });
 
 app.get("/udemy-certificate", (req, res) => {
   res.render("certificate-udemy.ejs", {
     title: "itesar.cz Jaroslav Tesař | Full-stack Web Developer kurz",
+    description:
+      "Certifikát o absolvování kurzu Full-Stack Web Development s React a Node.js na platformě Udemy.",
   });
 });
 
 app.get("/online-marketing-completed", (req, res) => {
   res.render("online-marketing-completed.ejs", {
     title: "itesar.cz Jaroslav Tesař | Online marketing absolvován",
+    description:
+      "Certifikát o absolvování kurzu Online Marketing na Akademii vzdělávání online s.r.o.",
   });
 });
 
 app.get("/online-marketing-qualification-1", (req, res) => {
   res.render("online-marketing-qualification-1.ejs", {
     title: "itesar.cz Jaroslav Tesař | Online marketing kvalifikace",
+    description:
+      "Certifikát o získání kvalifikace v online marketingu na Akademii vzdělávání online s.r.o. - první strana.",
   });
 });
 
 app.get("/online-marketing-qualification-2", (req, res) => {
   res.render("online-marketing-qualification-2.ejs", {
     title: "itesar.cz Jaroslav Tesař | Online marketing kvalifikace",
+    description:
+      "Certifikát o získání kvalifikace v online marketingu na Akademii vzdělávání online s.r.o. - druhá strana.",
   });
 });
 
 app.get("/mentoring", (req, res) => {
   res.render("mentoring.ejs", {
     title: "itesar.cz Jaroslav Tesař | Mentoring, konzultace a poradenství",
+    description:
+      "Nabízím mentoring, konzultace a poradenství v oblasti tvorby webových stránek, aplikací a online marketingu.",
   });
 });
 
