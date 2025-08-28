@@ -54,6 +54,8 @@ app.get("/", (req, res) => {
   res.render("./index.ejs", {
     title:
       "itesar.cz Jaroslav Tesař | Tvorba webových stránek Prostějov, Olomouc, Přerov",
+    description:
+      "Nabízím tvorbu webových stránek, aplikací a online poradenství v regionu Prostějov, Olomouc a Přerov. Vaše prezentace na internetu může konečně fungovat.",
   });
 });
 
