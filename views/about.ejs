@@ -1,38 +1,77 @@
-<%- include('partials/header') %>
-<div class="sub-page">
-  <div class="container-sub-page">
-    <h2 class="sub-title">Vzdělání</h2>
-    <div class="container-thumbs">
-      <div class="card-thumb">
-        <a href="/udemy-certificate">
-          <img src="./images/udemy-thumb.png" alt="Certifikát z Udemy" />
-        </a>
-      </div>
-      <div class="card-thumb">
-        <a href="/online-marketing-completed">
-          <img
-            src="./images/certifikat-thumb.png"
-            alt="Osvědčení z Online Marketigu o absolvování"
-          />
-        </a>
-      </div>
-      <div class="card-thumb">
-        <a href="online-marketing-qualification-1">
-          <img
-            src="./images/osvedceni1-thumb.png"
-            alt="Osvědčení z Online Marketigu o kvalifikaci, 1. strana"
-          />
-        </a>
-      </div>
-      <div class="card-thumb">
-        <a href="online-marketing-qualification-2">
-          <img
-            src="./images/osvedceni2-thumb.png"
-            alt="Osvědčení z Online Marketigu o kvalifikaci, 2. strana"
-          />
-        </a>
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Jmenuji se Jaroslav Tesař a jsem webový vývojář z Prostějova. Mám zkušenosti s tvorbou webových stránek a aplikací, online marketingem a SEO optimalizací."
+    />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-ENJSZC257Q"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-ENJSZC257Q");
+    </script>
+    <link rel="shortcut icon" href="./favicon.ico" sizes="any" />
+    <title>itesar.cz Jaroslav Tesař | Vzdělání a zkušenosti</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mansalva&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <div class="header"><%- include('./partials/navbar') %></div>
+    <div class="sub-page">
+      <div class="container-sub-page">
+        <h2 class="sub-title">Vzdělání</h2>
+        <div class="container-thumbs">
+          <div class="card-thumb">
+            <a href="/udemy-certificate">
+              <img src="./images/udemy-thumb.png" alt="Certifikát z Udemy" />
+            </a>
+          </div>
+          <div class="card-thumb">
+            <a href="/online-marketing-completed">
+              <img
+                src="./images/certifikat-thumb.png"
+                alt="Osvědčení z Online Marketigu o absolvování"
+              />
+            </a>
+          </div>
+          <div class="card-thumb">
+            <a href="online-marketing-qualification-1">
+              <img
+                src="./images/osvedceni1-thumb.png"
+                alt="Osvědčení z Online Marketigu o kvalifikaci, 1. strana"
+              />
+            </a>
+          </div>
+          <div class="card-thumb">
+            <a href="online-marketing-qualification-2">
+              <img
+                src="./images/osvedceni2-thumb.png"
+                alt="Osvědčení z Online Marketigu o kvalifikaci, 2. strana"
+              />
+            </a>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-<%- include('partials/footer') %>
+    <%- include('partials/footer') %>
+  </body>
+</html>
