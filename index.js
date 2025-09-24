@@ -87,12 +87,7 @@ app.get("/standard-package", (req, res) => {
     userAgent: req.get("User-Agent"),
   };
   logger.info(visit);
-  res.render("standard-package.ejs", {
-    title:
-      "itesar.cz Jaroslav Tesař | Webové aplikace Prostějov, Olomouc, Přerov",
-    description:
-      "Standardní balíček tvorby webových stránek zahrnuje webovou aplikaci s jednou funkcionalitou (s možností rozšíření na více), responzivní design a základní SEO optimalizaci.",
-  });
+  res.render("standard-package.ejs");
 });
 
 app.get("/about", (req, res) => {
@@ -112,35 +107,19 @@ app.get("/udemy-certificate", (req, res) => {
 });
 
 app.get("/online-marketing-completed", (req, res) => {
-  res.render("online-marketing-completed.ejs", {
-    title: "itesar.cz Jaroslav Tesař | Online marketing absolvován",
-    description:
-      "Certifikát o absolvování kurzu Online Marketing na Akademii vzdělávání online s.r.o.",
-  });
+  res.render("online-marketing-completed.ejs");
 });
 
 app.get("/online-marketing-qualification-1", (req, res) => {
-  res.render("online-marketing-qualification-1.ejs", {
-    title: "itesar.cz Jaroslav Tesař | Online marketing kvalifikace",
-    description:
-      "Certifikát o získání kvalifikace v online marketingu na Akademii vzdělávání online s.r.o. - první strana.",
-  });
+  res.render("online-marketing-qualification-1.ejs");
 });
 
 app.get("/online-marketing-qualification-2", (req, res) => {
-  res.render("online-marketing-qualification-2.ejs", {
-    title: "itesar.cz Jaroslav Tesař | Online marketing kvalifikace",
-    description:
-      "Certifikát o získání kvalifikace v online marketingu na Akademii vzdělávání online s.r.o. - druhá strana.",
-  });
+  res.render("online-marketing-qualification-2.ejs");
 });
 
 app.get("/mentoring", (req, res) => {
-  res.render("mentoring.ejs", {
-    title: "itesar.cz Jaroslav Tesař | Mentoring, konzultace a poradenství",
-    description:
-      "Nabízím mentoring, konzultace a poradenství v oblasti tvorby webových stránek, aplikací a online marketingu.",
-  });
+  res.render("mentoring.ejs");
 });
 
 // Endpoint to handle form submission - this is where the email will be sent

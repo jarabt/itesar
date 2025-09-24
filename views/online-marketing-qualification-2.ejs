@@ -1,15 +1,56 @@
-<%- include('partials/header') %>
-<div class="sub-page">
-  <div class="container-sub-page">
-    <h2 class="sub-title">
-      Online marketing, získání kvalifikace, druhá strana
-    </h2>
-    <div class="container-image">
-      <img
-        src="./images/osvedceni2.png"
-        alt="Certifikát získání kvalifikace z Online marketingu"
-      />
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Certifikát o získání kvalifikace v online marketingu na Akademii vzdělávání online s.r.o. - druhá strana."
+    />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-ENJSZC257Q"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-ENJSZC257Q");
+    </script>
+    <link rel="shortcut icon" href="./favicon.ico" sizes="any" />
+    <title>
+      itesar.cz Jaroslav Tesař | Online marketing kvalifikace 2.strana
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mansalva&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <div class="header"><%- include('./partials/navbar') %></div>
+    <div class="sub-page">
+      <div class="container-sub-page">
+        <h2 class="sub-title">
+          Online marketing, získání kvalifikace, druhá strana
+        </h2>
+        <div class="container-image">
+          <img
+            src="./images/osvedceni2.png"
+            alt="Certifikát získání kvalifikace z Online marketingu"
+          />
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-<%- include('partials/footer') %>
+    <%- include('partials/footer') %>
+  </body>
+</html>
