@@ -112,11 +112,7 @@ app.get("/about", (req, res) => {
 });
 
 app.get("/udemy-certificate", (req, res) => {
-  res.render("certificate-udemy.ejs", {
-    title: "itesar.cz Jaroslav Tesař | Full-stack Web Developer kurz",
-    description:
-      "Certifikát o absolvování kurzu Full-Stack Web Development s React a Node.js na platformě Udemy.",
-  });
+  res.render("certificate-udemy.ejs");
 });
 
 app.get("/online-marketing-completed", (req, res) => {
