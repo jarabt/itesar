@@ -79,12 +79,7 @@ app.get("/basic-package", (req, res) => {
     userAgent: req.get("User-Agent"),
   };
   logger.info(visit);
-  res.render("basic-package.ejs", {
-    title:
-      "itesar.cz Jaroslav Tesař | Internetové stránky Prostějov, Olomouc, Přerov",
-    description:
-      "Základní balíček tvorby webových stránek zahrnuje internetovou prezentaci s až 5 sekcemi, responzivní design a základní SEO optimalizaci.",
-  });
+  res.render("basic-package.ejs");
 });
 
 app.get("/standard-package", (req, res) => {
@@ -113,11 +108,7 @@ app.get("/about", (req, res) => {
     userAgent: req.get("User-Agent"),
   };
   logger.info(visit);
-  res.render("about.ejs", {
-    title: "itesar.cz Jaroslav Tesař | Vzdělání a zkušenosti",
-    description:
-      "Jmenuji se Jaroslav Tesař a jsem webový vývojář z Prostějova. Mám zkušenosti s tvorbou webových stránek a aplikací, online marketingem a SEO optimalizací.",
-  });
+  res.render("about.ejs");
 });
 
 app.get("/udemy-certificate", (req, res) => {
