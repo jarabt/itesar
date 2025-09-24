@@ -63,11 +63,7 @@ app.get("/contact", (req, res) => {
     userAgent: req.get("User-Agent"),
   };
   logger.info(visit);
-  res.render("contact.ejs", {
-    title: "itesar.cz Jaroslav Tesař | Kontaktní formulář",
-    description:
-      "Máte zájem o tvorbu webových stránek, aplikací nebo online poradenství? Kontaktujte mě pomocí kontaktního formuláře.",
-  });
+  res.render("contact.ejs");
 });
 
 app.get("/basic-package", (req, res) => {
