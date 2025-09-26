@@ -2,6 +2,7 @@ import express from "express";
 // import winston from "winston";
 import env from "dotenv";
 import nodemailer from "nodemailer";
+import morgan from "morgan";
 
 const app = express();
 env.config();
@@ -18,6 +19,7 @@ const transporter = nodemailer.createTransport({
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
+app.use(morgan("combined"));
 
 app.get("/", (req, res) => {
   res.render("./index.ejs");
