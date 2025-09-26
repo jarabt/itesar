@@ -1,5 +1,5 @@
 import express from "express";
-import winston from "winston";
+// import winston from "winston";
 import env from "dotenv";
 import nodemailer from "nodemailer";
 
@@ -16,89 +16,26 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-const logger = winston.createLogger({
-  level: "info",
-  format: winston.format.combine(
-    winston.format.timestamp(),
-    winston.format.json()
-  ),
-  transports: [
-    new winston.transports.Console(),
-    new winston.transports.File({ filename: "app.log" }),
-  ],
-});
-
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
-// app.use((req, res, next) => {
-//   const visit = {
-//     timestamp: new Date().toISOString(),
-//     ip: req.ip,
-//     url: req.originalUrl,
-//     userAgent: req.get("User-Agent"),
-//     referrer: req.get("Referer") || "Direct",
-//   };
-//   console.log(visit); // or save to DB
-//   next();
-// });
 
 app.get("/", (req, res) => {
-  // Log the visitor
-  const visit = {
-    url: req.originalUrl,
-    ip: req.headers["x-forwarded-for"] || req.socket.remoteAddress,
-    referrer: req.get("Referer") || "Direct",
-    userAgent: req.get("User-Agent"),
-  };
-  logger.info(visit);
   res.render("./index.ejs");
 });
 
 app.get("/contact", (req, res) => {
-  // Log the visitor
-  const visit = {
-    url: req.originalUrl,
-    ip: req.headers["x-forwarded-for"] || req.socket.remoteAddress,
-    referrer: req.get("Referer") || "Direct",
-    userAgent: req.get("User-Agent"),
-  };
-  logger.info(visit);
   res.render("contact.ejs");
 });
 
 app.get("/basic-package", (req, res) => {
-  // Log the visitor
-  const visit = {
-    url: req.originalUrl,
-    ip: req.headers["x-forwarded-for"] || req.socket.remoteAddress,
-    referrer: req.get("Referer") || "Direct",
-    userAgent: req.get("User-Agent"),
-  };
-  logger.info(visit);
   res.render("basic-package.ejs");
 });
 
 app.get("/standard-package", (req, res) => {
-  // Log the visitor
-  const visit = {
-    url: req.originalUrl,
-    ip: req.headers["x-forwarded-for"] || req.socket.remoteAddress,
-    referrer: req.get("Referer") || "Direct",
-    userAgent: req.get("User-Agent"),
-  };
-  logger.info(visit);
   res.render("standard-package.ejs");
 });
 
 app.get("/about", (req, res) => {
-  // Log the visitor
-  const visit = {
-    url: req.originalUrl,
-    ip: req.headers["x-forwarded-for"] || req.socket.remoteAddress,
-    referrer: req.get("Referer") || "Direct",
-    userAgent: req.get("User-Agent"),
-  };
-  logger.info(visit);
   res.render("about.ejs");
 });
 
@@ -132,14 +69,12 @@ app.post("/message", async (req, res) => {
       // text: req.body.message, // plain text body
       html: `<b>Sender's name: </b>${req.body.name}<br><b>Sender's email: </b>${req.body.email}<br><b>Message: </b>${req.body.message}`, // html body
     });
-    logger.info(info);
   } catch (err) {
-    logger.error(err);
+    console.log(err);
   }
   res.redirect("/");
 });
 
 app.listen(port, () => {
-  //console.log(`Server running on port ${port}`);
-  logger.info(`Server running on port ${port}`);
+  console.log(`Server running on port ${port}`);
 });
