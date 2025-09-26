@@ -19,7 +19,7 @@ const transporter = nodemailer.createTransport({
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
-app.use(morgan("combined"));
+app.use(morgan("combined")); //app.use(morgan("tiny"));
 
 app.get("/", (req, res) => {
   res.render("./index.ejs");
