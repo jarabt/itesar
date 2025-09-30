@@ -18,7 +18,7 @@ main {
 main:after {
   content: "";
   display: block;
-  height: 70px;
+  height: 100px;
 }
 
 /* header.ejs */
