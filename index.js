@@ -119,7 +119,7 @@ app.get("/online-marketing-qualification-2", (req, res) => {
 });
 
 app.get("/mentoring", (req, res) => {
-  res.render("negative-margin.ejs");
+  res.render("mentoring.ejs");
 });
 
 // Endpoint to handle form submission - this is where the email will be sent
