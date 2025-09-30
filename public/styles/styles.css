@@ -1,9 +1,16 @@
+/* Global Styles */
+body {
+  font-family: "Roboto", sans-serif;
+}
+h2 {
+  text-align: center;
+}
+
 /* for sticky footer */
 html,
 body {
   height: 100%;
 }
-/* for sticky footer */
 main {
   min-height: 100%;
   margin-bottom: -100px;
@@ -12,18 +19,6 @@ main:after {
   content: "";
   display: block;
   height: 100px;
-}
-footer {
-  height: 100px;
-  background: #eee;
-}
-
-/* Global Styles */
-body {
-  font-family: "Roboto", sans-serif;
-}
-h2 {
-  text-align: center;
 }
 
 /* header.ejs */
@@ -53,15 +48,6 @@ h2 {
   padding-left: 10px;
   padding-right: 10px;
 }
-
-/* from copilot */
-/* ...existing code... */
-/* .container-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem;
-} */
 .menu {
   display: flex;
   gap: 1rem;
@@ -305,7 +291,6 @@ button {
   position: absolute;
   left: 0px;
   z-index: -1;
-  /* margin-top: 50px; */
 }
 .container-footer {
   display: grid;
@@ -379,9 +364,6 @@ button {
     width: 750px;
     height: auto;
   }
-  /* .menu-item {
-    font-size: 17px;
-  } */
 }
 @media (max-width: 650px) {
   .menu {
