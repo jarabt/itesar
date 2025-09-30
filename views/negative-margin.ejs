@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Nabízím mentoring, konzultace a poradenství v oblasti tvorby webových stránek, aplikací a online marketingu."
+    />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-ENJSZC257Q"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-ENJSZC257Q");
+    </script>
+    <link rel="shortcut icon" href="./favicon.ico" sizes="any" />
+    <title>
+      itesar.cz Jaroslav Tesař | Mentoring, konzultace a poradenství
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mansalva&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <div class="header"><%- include('./partials/navbar') %></div>
+    <div class="sub-page">
+      <div class="container-sub-page">
+        <h2 class="sub-title">Poradenství, mentoring a konzultace</h2>
+        <dl>
+          <dt>Online marketing</dt>
+          <dd>Google, použití sociálních sítí apod.</dd>
+          <dt>Svět IT</dt>
+          <dd>
+            Poradenství a konzultace nejen v oblasti Internetu, výběr řešení
+          </dd>
+          <dt>Programování</dt>
+          <dd>Začínající programátoři, vzdělání, mentoring</dd>
+          <dt>Cena</dt>
+          <dd>500,- Kč/hod</dd>
+        </dl>
+      </div>
+    </div>
+    <%- include('partials/footer') %>
+  </body>
+</html>
