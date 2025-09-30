@@ -1,3 +1,23 @@
+/* negative-margin.ejs */
+html,
+body {
+  height: 100%;
+}
+main {
+  min-height: 100%;
+  margin-bottom: -100px;
+  background: #ddd;
+}
+main:after {
+  content: "";
+  display: block;
+  height: 100px;
+}
+footer {
+  height: 100px;
+  background: #eee;
+}
+
 /* Global Styles */
 body {
   font-family: "Roboto", sans-serif;
