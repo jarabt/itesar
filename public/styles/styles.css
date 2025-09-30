@@ -13,12 +13,12 @@ body {
 }
 main {
   min-height: 100%;
-  margin-bottom: -100px;
+  margin-bottom: -70px;
 }
 main:after {
   content: "";
   display: block;
-  height: 100px;
+  height: 70px;
 }
 
 /* header.ejs */
@@ -285,7 +285,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100px;
+  height: 70px;
   background-color: #6eacda;
   width: 100%;
   position: absolute;
