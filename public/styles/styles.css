@@ -82,13 +82,18 @@ main:after {
   align-items: center;
 }
 h1 {
-  font-family: "Mansalva", cursive;
+  /* font-family: "Mansalva", cursive; */
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 70px;
   grid-column-start: 1;
   grid-column-end: 4;
   text-align: center;
+}
+.highlight {
+  color: #03346e;
+  font-weight: 600;
 }
 
 /* index.ejs - About */
