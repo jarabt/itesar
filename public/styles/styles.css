@@ -108,7 +108,7 @@ h1 {
 }
 .subheadline {
   /* https://thecascade.dev/article/least-amount-of-css/ */
-  max-width: min(70ch, 100% - 4rem);
+  max-width: min(55ch, 100% - 4rem);
   margin-inline: auto;
   line-height: 1.5;
 }
