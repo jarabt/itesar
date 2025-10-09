@@ -63,7 +63,7 @@ main:after {
   cursor: pointer;
 }
 
-/* index.ejs - Title */
+/* index.ejs, about.ejs - Title */
 #title {
   background-color: #6eacda;
   position: absolute;
@@ -96,7 +96,7 @@ h1 {
   font-style: italic;
 }
 
-/* index.ejs - About */
+/* index.ejs, about.ejs - About */
 .container-about {
   display: flex;
   justify-content: center;
