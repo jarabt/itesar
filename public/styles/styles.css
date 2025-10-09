@@ -41,9 +41,6 @@ main:after {
   color: #000;
   font-size: 20px;
   font-weight: 500;
-  /* font-weight: 100; */
-  /* font-weight: bold;
-  font-size: 20px; */
   padding: 10px;
 }
 .logo {
@@ -105,7 +102,15 @@ h1 {
 
 /* index.ejs */
 .article {
+  font-size: 1.5rem;
+  font-weight: 500;
   margin-top: 35vh;
+}
+.subheadline {
+  /* https://thecascade.dev/article/least-amount-of-css/ */
+  max-width: min(70ch, 100% - 4rem);
+  margin-inline: auto;
+  line-height: 1.5;
 }
 
 /* about.ejs */
