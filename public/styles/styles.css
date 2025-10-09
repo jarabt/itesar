@@ -105,12 +105,10 @@ h1 {
   font-size: 1.5rem;
   font-weight: 500;
   margin-top: 35vh;
-}
-.subheadline {
+  line-height: 1.5;
   /* https://thecascade.dev/article/least-amount-of-css/ */
   max-width: min(55ch, 100% - 4rem);
   margin-inline: auto;
-  line-height: 1.5;
 }
 
 /* about.ejs */
