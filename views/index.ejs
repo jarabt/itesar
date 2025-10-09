@@ -9,40 +9,11 @@
     a online poradenství v regionu Prostějov, Olomouc a Přerov. Vaše prezentace
     na internetu může konečně fungovat."
     />
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-ENJSZC257Q"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-ENJSZC257Q");
-      gtag("consent", "default", {
-        analytics_storage: "denied", // disables GA4 cookies
-      });
-    </script>
-    <link rel="shortcut icon" href="./favicon.ico" sizes="any" />
     <title>
       itesar.cz Jaroslav Tesař | Tvorba webových stránek Prostějov, Olomouc,
       Přerov
     </title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mansalva&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./styles/styles.css" />
+    <%- include('partials/links') %>
   </head>
   <body>
     <main>
@@ -174,5 +145,21 @@
       </div>
     </main>
     <%- include('partials/footer') %>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-ENJSZC257Q"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-ENJSZC257Q");
+      gtag("consent", "default", {
+        analytics_storage: "denied", // disables GA4 cookies
+      });
+    </script>
   </body>
 </html>
