@@ -113,6 +113,10 @@ h1 {
 .article img {
   width: 100%;
 }
+.benefit {
+  color: #03346e;
+  font-style: italic;
+}
 
 /* about.ejs */
 .grid-container {
