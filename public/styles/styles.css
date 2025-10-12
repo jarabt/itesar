@@ -351,9 +351,6 @@ button {
   .price-card {
     width: 50%;
   }
-  .footer {
-    height: 7vh;
-  }
 }
 @media (max-width: 800px) {
   .container-pricing {
