@@ -402,6 +402,14 @@ button {
   .menu-toggle {
     display: block;
   }
+  .article {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 360px) {
+  .article {
+    font-size: 1.2rem;
+  }
 }
 
 /* Animations */
