@@ -110,9 +110,6 @@ h1 {
   max-width: min(55ch, 100% - 4rem);
   margin-inline: auto;
 }
-.article img {
-  width: 100%;
-}
 .benefit {
   color: #03346e;
   font-style: italic;
