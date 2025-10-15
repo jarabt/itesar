@@ -8,22 +8,6 @@
       content="Tvorba webu s osobním přístupem, všechno za vás zařídím, profesionálně, v regionu Prostějov, Olomouc a Přerov."
     />
     <title>itesar.cz Jaroslav Tesař | www stránky bez starostí Prostějov</title>
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-ENJSZC257Q"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-ENJSZC257Q");
-      gtag("consent", "default", {
-        analytics_storage: "denied", // disables GA4 cookies
-      });
-    </script>
     <%- include('partials/links') %>
   </head>
   <body>
@@ -81,5 +65,21 @@
       </div>
     </main>
     <%- include('partials/footer') %>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-ENJSZC257Q"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("consent", "default", {
+        analytics_storage: "denied",
+      });
+      gtag("config", "G-ENJSZC257Q");
+    </script>
   </body>
 </html>
