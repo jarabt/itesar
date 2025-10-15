@@ -65,5 +65,21 @@
       </div>
     </main>
     <%- include('partials/footer') %>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-ENJSZC257Q"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-ENJSZC257Q");
+      gtag("consent", "default", {
+        analytics_storage: "denied", // disables GA4 cookies
+      });
+    </script>
   </body>
 </html>
