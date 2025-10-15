@@ -7,7 +7,6 @@ if (localStorage.getItem("cookieConsent")) {
   banner.style.display = "none";
   const consent = localStorage.getItem("cookieConsent");
   if (consent === "accepted") {
-    alert("Díky za souhlas! Můžeš si teď užít plnou funkcionalitu webu.");
     gtag("consent", "update", {
       analytics_storage: "granted",
     });
