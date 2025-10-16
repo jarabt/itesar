@@ -11,8 +11,11 @@ if (localStorage.getItem("cookieConsent")) {
       analytics_storage: "granted",
     });
   }
+} else {
+  banner.style.display = "flex";
 }
 
+// Event listeners for buttons
 acceptBtn.onclick = function () {
   // Grant analytics consent
   gtag("consent", "update", {
