@@ -15,7 +15,11 @@ colorInput.addEventListener("input", () => {
   } else if (arraySplittedBySpace.length === 3) {
     resultArray = arraySplittedBySpace;
   }
-  console.log(resultArray);
+  let resultArrayClean = null;
+  if (resultArray) {
+    resultArrayClean = resultArray.map((item) => item.replace(/\D/g, ""));
+  }
+  console.log(resultArrayClean);
 
   //   const arrayReplaced = arrayFromSplitted.map((item) =>
   //     item.replace(/\D/g, "")
