@@ -6,12 +6,21 @@ const blueSpan = document.querySelector(".blue");
 const testSpan = document.querySelector(".test");
 
 colorInput.addEventListener("input", () => {
-  const arrayFromSplitted = colorInput.value.split(",");
-  console.log(arrayFromSplitted);
-  const arrayReplaced = arrayFromSplitted.map((item) =>
-    item.replace(/\D/g, "")
-  );
-  console.log(arrayReplaced);
+  const value = colorInput.value.trim();
+  let resultArray = null;
+  const arraySplittedByComma = value.split(",");
+  const arraySplittedBySpace = value.split(" ");
+  if (arraySplittedByComma.length === 3) {
+    resultArray = arraySplittedByComma;
+  } else if (arraySplittedBySpace.length === 3) {
+    resultArray = arraySplittedBySpace;
+  }
+  console.log(resultArray);
+
+  //   const arrayReplaced = arrayFromSplitted.map((item) =>
+  //     item.replace(/\D/g, "")
+  //   );
+  //   console.log(arrayReplaced);
 
   //   const value = colorInput.value.replace(/\D/g, "");
   //   testSpan.innerHTML = value.trim();
