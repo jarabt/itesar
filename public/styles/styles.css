@@ -324,6 +324,11 @@ button {
   padding: 10px;
 }
 
+/* Color converter */
+.color {
+  border: 1px solid #000;
+}
+
 /* footer.ejs */
 .footer {
   display: flex;
