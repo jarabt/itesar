@@ -1,4 +1,5 @@
 const colorInput = document.getElementById("color");
 colorInput.addEventListener("input", () => {
-  alert(colorInput.value);
+  const value = colorInput.value;
+  const arrayFromSplitted = value.split(",");
 });
