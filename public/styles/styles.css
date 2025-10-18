@@ -298,21 +298,21 @@ dt {
 .contact-card textarea {
   width: 220px;
 }
-textarea {
+.contact-card textarea {
   height: 150px;
 }
-input,
-textarea {
+.contact-card input,
+.contact-card textarea {
   margin: 10px;
   border-radius: 5px;
   border-width: 0px;
   font: inherit;
 }
-input:focus,
-textarea:focus {
+.contact-card input:focus,
+.contact-card textarea:focus {
   outline: none;
 }
-button {
+.button-contact {
   background: none;
   color: inherit;
   border: none;
