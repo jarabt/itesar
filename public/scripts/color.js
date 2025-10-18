@@ -18,6 +18,16 @@ colorInput.addEventListener("input", () => {
   let resultArrayClean = null;
   if (resultArray) {
     resultArrayClean = resultArray.map((item) => item.replace(/\D/g, ""));
+    let validColors =
+      resultArrayClean[0] &&
+      resultArrayClean[1] &&
+      resultArrayClean[2] &&
+      resultArrayClean[0] <= 255 &&
+      resultArrayClean[1] <= 255 &&
+      resultArrayClean[2] <= 255;
+    if (validColors) {
+      alert("OK");
+    }
   }
   console.log(resultArrayClean);
 
