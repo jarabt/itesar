@@ -10,7 +10,6 @@ colorInput.addEventListener("input", () => {
   let value = colorInput.value.trim();
   // https://stackoverflow.com/questions/3286874/remove-all-multiple-spaces-in-javascript-and-replace-with-single-space
   value = value.replace(/ +(?= )/g, "");
-  let resultArray = null;
 
   // Splitted by comma
   // make array of strings from value, which are separated by comma
@@ -41,6 +40,14 @@ colorInput.addEventListener("input", () => {
     isNotEmptyStringNorOneSpace
   );
   //console.log(arraySplittedBySpace);
+
+  // Choosing the array
+  let resultArray = null;
+  if (arraySplittedByComma.length === 3) {
+    resultArray = arraySplittedByComma;
+  } else if (arraySplittedBySpace.length === 3) {
+    resultArray = arraySplittedBySpace;
+  }
 
   // -----------------------------------------------------------------------------------------------------------
   // -----------------------------------------------------------------------------------------------------------
