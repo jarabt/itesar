@@ -327,6 +327,9 @@ dt {
 /* Color converter */
 .color-input {
   border: 1px solid #000;
+  font: inherit;
+  font-size: 20px;
+  border-radius: 5px;
 }
 
 /* footer.ejs */
