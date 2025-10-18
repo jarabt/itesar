@@ -17,6 +17,9 @@ colorInput.addEventListener("input", () => {
   }
   let resultArrayClean = null;
   if (resultArray) {
+    resultArray.forEach((element) => {
+      element = element.trim();
+    });
     resultArrayClean = resultArray.map((item) => item.replace(/\D/g, ""));
     let validColors =
       resultArrayClean[0] &&
