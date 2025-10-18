@@ -6,12 +6,46 @@ const blueSpan = document.querySelector(".blue");
 const testSpan = document.querySelector(".test");
 
 colorInput.addEventListener("input", () => {
-  const valueFromInput = colorInput.value.trim();
+  // remove space before and after string
+  let value = colorInput.value.trim();
   // https://stackoverflow.com/questions/3286874/remove-all-multiple-spaces-in-javascript-and-replace-with-single-space
-  const value = valueFromInput.replace(/ +(?= )/g, "");
+  value = value.replace(/ +(?= )/g, "");
   let resultArray = null;
-  const arraySplittedByComma = value.split(",");
-  const arraySplittedBySpace = value.split(" ");
+
+  // Splitted by comma
+  // make array of strings from value, which are separated by comma
+  let arraySplittedByComma = value.split(",");
+  // remove non digit characters from all items - https://stackoverflow.com/questions/1862130/strip-all-non-numeric-characters-from-string-in-javascript
+  // https://stackoverflow.com/questions/12482961/change-values-in-array-when-doing-foreach
+  arraySplittedByComma.forEach((item, index, theArray) => {
+    theArray[index] = theArray[index].replace(/\D/g, "");
+  });
+  // remove items with empty string or one space
+  function isNotEmptyStringNorOneSpace(val) {
+    return !(val.length === 0 || val === " ");
+  }
+  arraySplittedByComma = arraySplittedByComma.filter(
+    isNotEmptyStringNorOneSpace
+  );
+  // console.log(arraySplittedByComma);
+
+  // Splitted by space
+  let arraySplittedBySpace = value.split(" ");
+  // remove non digit characters from all items - https://stackoverflow.com/questions/1862130/strip-all-non-numeric-characters-from-string-in-javascript
+  // https://stackoverflow.com/questions/12482961/change-values-in-array-when-doing-foreach
+  arraySplittedBySpace.forEach((item, index, theArray) => {
+    theArray[index] = theArray[index].replace(/\D/g, "");
+  });
+  // remove items with empty string or one space
+  arraySplittedBySpace = arraySplittedBySpace.filter(
+    isNotEmptyStringNorOneSpace
+  );
+  //console.log(arraySplittedBySpace);
+
+  // -----------------------------------------------------------------------------------------------------------
+  // -----------------------------------------------------------------------------------------------------------
+  // make array of strings from value, which are separated by space
+  // const arraySplittedBySpace = value.split(" ");
   if (arraySplittedByComma.length === 3) {
     resultArray = arraySplittedByComma;
   } else if (arraySplittedBySpace.length === 3) {
@@ -31,10 +65,10 @@ colorInput.addEventListener("input", () => {
       resultArrayClean[1] <= 255 &&
       resultArrayClean[2] <= 255;
     if (validColors) {
-      alert("OK");
+      // alert("OK");
     }
   }
-  console.log(resultArrayClean);
+  // console.log(resultArrayClean);
 
   //   const arrayReplaced = arrayFromSplitted.map((item) =>
   //     item.replace(/\D/g, "")
