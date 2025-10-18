@@ -6,7 +6,9 @@ const blueSpan = document.querySelector(".blue");
 const testSpan = document.querySelector(".test");
 
 colorInput.addEventListener("input", () => {
-  const value = colorInput.value.trim();
+  const valueFromInput = colorInput.value.trim();
+  // https://stackoverflow.com/questions/3286874/remove-all-multiple-spaces-in-javascript-and-replace-with-single-space
+  const value = valueFromInput.replace(/ +(?= )/g, "");
   let resultArray = null;
   const arraySplittedByComma = value.split(",");
   const arraySplittedBySpace = value.split(" ");
