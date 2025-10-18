@@ -1,4 +1,4 @@
-const colorInput = document.getElementById("color");
+const colorInput = document.getElementById("color-input");
 const redSpan = document.querySelector(".red");
 const greenSpan = document.querySelector(".green");
 const blueSpan = document.querySelector(".blue");
