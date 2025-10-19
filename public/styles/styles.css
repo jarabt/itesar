@@ -331,6 +331,17 @@ dt {
   font-size: 20px;
   border-radius: 5px;
 }
+.button-copy {
+  background: none;
+  color: inherit;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px;
+}
 
 /* footer.ejs */
 .footer {
