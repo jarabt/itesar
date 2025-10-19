@@ -1,7 +1,7 @@
 const colorInput = document.getElementById("color-input");
-const redSpan = document.querySelector(".red");
-const greenSpan = document.querySelector(".green");
-const blueSpan = document.querySelector(".blue");
+const rgbResult = document.querySelector(".rgb-result");
+// const greenSpan = document.querySelector(".green");
+// const blueSpan = document.querySelector(".blue");
 
 const testSpan = document.querySelector(".test");
 
@@ -55,7 +55,15 @@ colorInput.addEventListener("input", () => {
   } else if (arraySplittedBySpace.length === 3) {
     resultArray = arraySplittedBySpace;
   }
-  console.log(resultArray);
+  // console.log(resultArray);
+  if (resultArray) {
+    // destructing result array
+    const [r, g, b] = resultArray;
+    const rgbString = `rgb(${r}, ${g}, ${b})`;
+    rgbResult.innerHTML = rgbString;
+  } else {
+    rgbResult.innerHTML = "";
+  }
 
   // -----------------------------------------------------------------------------------------------------------
   // -----------------------------------------------------------------------------------------------------------
