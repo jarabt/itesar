@@ -1,9 +1,9 @@
 const colorInput = document.getElementById("color-input");
 const rgbResult = document.querySelector(".rgb-result");
-// const greenSpan = document.querySelector(".green");
-// const blueSpan = document.querySelector(".blue");
-
-const testSpan = document.querySelector(".test");
+const copyButton = document.querySelector(".button-copy");
+copyButton.onclick = function () {
+  navigator.clipboard.writeText(rgbResult.innerHTML);
+};
 
 colorInput.addEventListener("input", () => {
   // remove space before and after string
@@ -61,8 +61,10 @@ colorInput.addEventListener("input", () => {
     const [r, g, b] = resultArray;
     const rgbString = `rgb(${r}, ${g}, ${b})`;
     rgbResult.innerHTML = rgbString;
+    copyButton.style.display = "inline-block";
   } else {
     rgbResult.innerHTML = "";
+    copyButton.style.display = "none";
   }
 
   // -----------------------------------------------------------------------------------------------------------
