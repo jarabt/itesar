@@ -1,6 +1,7 @@
 const colorInput = document.getElementById("color-input");
 const rgbResult = document.querySelector(".rgb-result");
 const copyButton = document.querySelector(".button-copy");
+const hexResult = document.querySelector(".hex-result");
 copyButton.onclick = function () {
   navigator.clipboard.writeText(rgbResult.innerHTML);
 };
@@ -55,12 +56,27 @@ colorInput.addEventListener("input", () => {
   } else if (arraySplittedBySpace.length === 3) {
     resultArray = arraySplittedBySpace;
   }
-  // console.log(resultArray);
+  // to Hex function
+  function toHex(n) {
+    let hex = n.toString(16);
+    while (hex.length < 2) {
+      hex = "0" + hex;
+    }
+    return hex;
+  }
+
+  const test = 255;
+  console.log(test.toString(16));
+
   if (resultArray) {
     // destructing result array
     const [r, g, b] = resultArray;
     const rgbString = `rgb(${r}, ${g}, ${b})`;
+    const hexString = `#${toHex(Number(r))}${toHex(Number(g))}${toHex(
+      Number(b)
+    )}`;
     rgbResult.innerHTML = rgbString;
+    hexResult.innerHTML = hexString;
     copyButton.style.display = "inline-block";
   } else {
     rgbResult.innerHTML = "";
