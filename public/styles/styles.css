@@ -331,7 +331,8 @@ dt {
   font-size: 20px;
   border-radius: 5px;
 }
-.button-copy {
+.button-copy-rgb,
+.button-copy-hex {
   display: none;
   background: none;
   color: inherit;
