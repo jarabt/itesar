@@ -11,7 +11,7 @@ colorInput.addEventListener("input", () => {
   // https://stackoverflow.com/questions/3286874/remove-all-multiple-spaces-in-javascript-and-replace-with-single-space
   value = value.replace(/ +(?= )/g, "");
 
-  // Splitted by comma
+  // SPLITTED BY COMMA
   // make array of strings from value, which are separated by comma
   let arraySplittedByComma = value.split(",");
   // remove non digit characters from all items - https://stackoverflow.com/questions/1862130/strip-all-non-numeric-characters-from-string-in-javascript
@@ -26,9 +26,14 @@ colorInput.addEventListener("input", () => {
   arraySplittedByComma = arraySplittedByComma.filter(
     isNotEmptyStringNorOneSpace
   );
-  // console.log(arraySplittedByComma);
+  // remove items with not valid code number (must be 0 - 255)
+  function isNotValidCodeNumber(val) {
+    return !(val < 0 || val > 255);
+  }
+  arraySplittedByComma = arraySplittedByComma.filter(isNotValidCodeNumber);
+  console.log(arraySplittedByComma);
 
-  // Splitted by space
+  // SPLITTED BY SPACE
   let arraySplittedBySpace = value.split(" ");
   // remove non digit characters from all items - https://stackoverflow.com/questions/1862130/strip-all-non-numeric-characters-from-string-in-javascript
   // https://stackoverflow.com/questions/12482961/change-values-in-array-when-doing-foreach
@@ -39,6 +44,8 @@ colorInput.addEventListener("input", () => {
   arraySplittedBySpace = arraySplittedBySpace.filter(
     isNotEmptyStringNorOneSpace
   );
+  // remove items with not valid code number (must be 0 - 255)
+  arraySplittedBySpace = arraySplittedBySpace.filter(isNotValidCodeNumber);
   //console.log(arraySplittedBySpace);
 
   // Choosing the array
