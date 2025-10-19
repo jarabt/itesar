@@ -31,7 +31,7 @@ colorInput.addEventListener("input", () => {
     return !(val < 0 || val > 255);
   }
   arraySplittedByComma = arraySplittedByComma.filter(isNotValidCodeNumber);
-  console.log(arraySplittedByComma);
+  // console.log(arraySplittedByComma);
 
   // SPLITTED BY SPACE
   let arraySplittedBySpace = value.split(" ");
@@ -46,7 +46,7 @@ colorInput.addEventListener("input", () => {
   );
   // remove items with not valid code number (must be 0 - 255)
   arraySplittedBySpace = arraySplittedBySpace.filter(isNotValidCodeNumber);
-  //console.log(arraySplittedBySpace);
+  // console.log(arraySplittedBySpace);
 
   // Choosing the array
   let resultArray = null;
