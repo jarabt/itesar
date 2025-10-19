@@ -55,6 +55,7 @@ colorInput.addEventListener("input", () => {
   } else if (arraySplittedBySpace.length === 3) {
     resultArray = arraySplittedBySpace;
   }
+  console.log(resultArray);
 
   // -----------------------------------------------------------------------------------------------------------
   // -----------------------------------------------------------------------------------------------------------
