@@ -332,7 +332,8 @@ dt {
   border-radius: 5px;
 }
 .button-copy-rgb,
-.button-copy-hex {
+.button-copy-hex,
+.button-copy-hex2 {
   display: none;
   background: none;
   color: inherit;
