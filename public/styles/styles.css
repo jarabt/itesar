@@ -139,11 +139,6 @@ h1 {
   color: #03346e;
   font-style: italic;
 }
-.article-image {
-  width: 585px;
-  height: 400px;
-  background-color: green;
-}
 
 /* about.ejs */
 .grid-container {
