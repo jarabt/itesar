@@ -139,6 +139,9 @@ h1 {
   color: #03346e;
   font-style: italic;
 }
+.article img {
+  max-width: 90%;
+}
 
 /* about.ejs */
 .grid-container {
