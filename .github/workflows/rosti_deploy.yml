@@ -25,11 +25,11 @@ jobs:
       - name: Setup hostkey
         run: |
           echo "ssh.rosti.cz ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDE6gDbyZmESC3Wu/Kd/ozjxlo3xrzdxn/EYre/QDBkEfBtvw1PVGp3e2BcUSxtDgfL8iJM2Svh9aJdsWb5W73weOr+tYvGavw/lJy3HUzGv/A2h9MJLJyRK3pipO3VQuuoIOKBhAtCM6SbZzuea3WYejS/01pYOAVAysEmy1Fdk1oeit2bxbam/UJaXIBgzXfViItMakv6MN44ttkLNtESRXdGdqnEQAZEbZmrPBFYvphM7nJcf86hwVcBFX3snMPo6BdRKfOUKVzn3+2bTRDtVBlEeHEAjLIEM9rFwUdL5Q0bmndwR7r12MrUmDZc5v9sa75dlIF1TNOyl/5yt0WD" > ./known_hosts
-      - name: env
-        run: |
-          cat << EOF > .env
-          ${{ secrets.ENV }}
-          EOF
+      # - name: env
+      #   run: |
+      #     cat << EOF > .env
+      #     ${{ secrets.ENV }}
+      #     EOF
       - name: Dependencies
         run: |
           npm install
