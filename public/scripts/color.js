@@ -5,6 +5,7 @@ const hexResult = document.querySelector(".hex-result");
 const copyButtonHex = document.querySelector(".button-copy-hex");
 const hexResult2 = document.querySelector(".hex-result2");
 const copyButtonHex2 = document.querySelector(".button-copy-hex2");
+const brushStroke = document.querySelector(".brush-stroke");
 
 copyButtonRgb.onclick = function () {
   navigator.clipboard.writeText(rgbResult.innerHTML);
@@ -89,6 +90,8 @@ colorInput.addEventListener("input", () => {
     copyButtonRgb.style.display = "inline-block";
     copyButtonHex.style.display = "inline-block";
     copyButtonHex2.style.display = "inline-block";
+    brushStroke.style.backgroundColor = rgbString;
+    brushStroke.style.display = "block";
   } else {
     rgbResult.innerHTML = "";
     hexResult.innerHTML = "";
@@ -96,5 +99,6 @@ colorInput.addEventListener("input", () => {
     copyButtonRgb.style.display = "none";
     copyButtonHex.style.display = "none";
     copyButtonHex2.style.display = "none";
+    brushStroke.style.display = "none";
   }
 });

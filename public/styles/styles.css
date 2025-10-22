@@ -360,8 +360,8 @@ dt {
   font-size: 20px;
   padding: 10px;
 }
-.brash-stroke {
-  background-color: #03346e;
+.brush-stroke {
+  display: none;
 }
 
 /* footer.ejs */
