@@ -440,6 +440,9 @@ dt {
   .price-card {
     width: 50%;
   }
+  .content-article-title img {
+    width: 470px;
+  }
 }
 @media (max-width: 800px) {
   .container-pricing {
@@ -471,6 +474,9 @@ dt {
   .container-image img {
     width: 750px;
     height: auto;
+  }
+  .content-article-title img {
+    width: 350px;
   }
 }
 @media (max-width: 650px) {
