@@ -154,7 +154,7 @@ h1 {
 .content-article {
   margin-top: 50px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   flex-direction: column;
   font-size: 1.2rem;
@@ -178,6 +178,8 @@ h1 {
 }
 .content-article-text {
   text-align: left;
+  /* https://thecascade.dev/article/least-amount-of-css/ */
+  max-width: min(75ch, 100% - 4rem);
 }
 
 /* about.ejs */
