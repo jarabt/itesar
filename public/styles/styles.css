@@ -159,6 +159,7 @@ h1 {
   flex-direction: column;
   font-size: 1.2rem;
   width: 90%;
+  gap: 50px;
 }
 .content-article-title {
   display: flex;
@@ -499,6 +500,9 @@ dt {
   }
   .article {
     font-size: 1.3rem;
+  }
+  .content-article {
+    gap: 10px;
   }
   .content-article-title {
     flex-direction: column;
