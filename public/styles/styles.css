@@ -151,7 +151,13 @@ h1 {
   color: #03346e;
   font-style: italic;
 }
-.article img {
+.content-article-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.content-article-title img {
   max-width: 90%;
 }
 
