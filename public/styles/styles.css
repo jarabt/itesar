@@ -500,10 +500,23 @@ dt {
   .article {
     font-size: 1.3rem;
   }
+  .content-article-title {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .content-article-title-text h2 {
+    text-align: left;
+  }
+  .content-article-title img {
+    width: 300px;
+  }
 }
 @media (max-width: 360px) {
   .article {
     font-size: 1.2rem;
+  }
+  .content-article-title img {
+    width: 250px;
   }
 }
 
