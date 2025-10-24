@@ -51,8 +51,8 @@ app.get("/about", (req, res) => {
   res.render("about.ejs");
 });
 
-app.get("/packages", (req, res) => {
-  res.render("packages.ejs");
+app.get("/pricing", (req, res) => {
+  res.render("pricing.ejs");
 });
 
 app.get("/mentoring", (req, res) => {

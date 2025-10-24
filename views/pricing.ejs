@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Nabízím tyto cenové balíčky pro tvorbu webových stránek, webových aplikací v regionu Prostějov, Olomouc a Přerov."
+    />
+    <title>itesar.cz Jaroslav Tesař | Cenové balíčky</title>
+    <%- include('partials/links') %>
+  </head>
+  <body>
+    <%- include('partials/cookie-banner') %>
+    <main>
+      <div class="header"><%- include('./partials/navbar') %></div>
+      <div class="sub-page">
+        <div class="container-sub-page">
+          <div class="container-pricing">
+            <div class="price-card">
+              <h2>
+                <span class="price-title">Základní balíček</span><br />1490,- Kč
+              </h2>
+              <p class="p-title">INTERNETOVÁ PREZENTACE</p>
+              <ul>
+                <li>design</li>
+                <li>vložení zákazníkových textů</li>
+                <li>vložení zákazníkových fotek</li>
+                <li>vložení zákazníkova loga (ve formátu .svg)</li>
+                <li>1 stránka, s maximálně 5-ti sekcemi</li>
+                <li>nastavení hostingu</li>
+                <li>termín 2 týdny</li>
+              </ul>
+              <a href="/basic-package">
+                <img
+                  class="info-icon"
+                  src="./images/info-icon.png"
+                  alt="Ikona pro info Základního balíčku"
+                />Více info zde.
+              </a>
+            </div>
+            <div class="price-card">
+              <h2>
+                <span class="price-title">Standardní balíček</span>
+                <br />
+                <!-- <span class="special-offer-color">4990,- Kč</span> -->
+                5870,- Kč
+              </h2>
+              <p class="p-title">WEBOVÁ APLIKACE</p>
+              <ul>
+                <li>design</li>
+                <li>vložení zákazníkových textů</li>
+                <li>vložení zákazníkových fotek</li>
+                <li>vložení zákazníkova loga (ve formátu .svg)</li>
+                <li>maximálně 3 stránky</li>
+                <li>menu</li>
+                <li>
+                  možnost vkládání obsahu zákazníkem přes svůj login a formulář
+                  (nebo jiná jedna funkcionalita)
+                </li>
+                <li>nastavení hostingu</li>
+                <li>termín 3 týdny</li>
+              </ul>
+              <a href="/standard-package">
+                <img
+                  class="info-icon"
+                  src="./images/info-icon.png"
+                  alt="Ikona pro info Standardního balíčku"
+                />Více info zde.
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <%- include('partials/footer') %>
+  </body>
+</html>
