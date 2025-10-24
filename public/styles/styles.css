@@ -131,10 +131,8 @@ h1 {
 }
 
 /* index.ejs, about.ejs - About */
-.container-about {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.about-article {
+  margin-top: 35vh;
 }
 
 /* index.ejs */
