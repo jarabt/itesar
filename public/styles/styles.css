@@ -189,6 +189,9 @@ h1 {
 .my-photo {
   width: 70%;
 }
+.painting {
+  width: 100%;
+}
 
 /* about.ejs */
 .grid-container {
