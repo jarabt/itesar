@@ -185,6 +185,9 @@ h1 {
   /* https://thecascade.dev/article/least-amount-of-css/ */
   max-width: min(75ch, 100% - 4rem);
 }
+.my-photo {
+  width: 70%;
+}
 
 /* about.ejs */
 .grid-container {
@@ -444,7 +447,7 @@ dt {
   .price-card {
     width: 50%;
   }
-  .content-article-title img {
+  .content-article-title-image {
     width: 470px;
   }
 }
@@ -479,7 +482,7 @@ dt {
     width: 750px;
     height: auto;
   }
-  .content-article-title img {
+  .content-article-title-image {
     width: 350px;
   }
 }
@@ -514,7 +517,7 @@ dt {
   .content-article-title-text h2 {
     text-align: left;
   }
-  .content-article-title img {
+  .content-article-title-image {
     width: 300px;
   }
 }
@@ -522,7 +525,7 @@ dt {
   .article {
     font-size: 1.2rem;
   }
-  .content-article-title img {
+  .content-article-title-image {
     width: 250px;
   }
 }
