@@ -184,6 +184,7 @@ h1 {
   text-align: left;
   /* https://thecascade.dev/article/least-amount-of-css/ */
   max-width: min(75ch, 100% - 4rem);
+  line-height: 1.5;
 }
 .my-photo {
   width: 70%;
