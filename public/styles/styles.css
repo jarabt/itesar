@@ -88,12 +88,12 @@ main:after {
   bottom: 8px; /* adjust offset as needed */
   height: 2px;
   width: 0;
-  background: #6eacda;
-  transition: width 300ms ease;
+  background: black;
   pointer-events: none;
 }
 .menu-item:hover::after {
   width: 100%;
+  transition: width 300ms ease;
 }
 .menu-item:hover {
   color: #6eacda;
