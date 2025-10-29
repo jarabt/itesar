@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Články o www pro všechny." />
+    <title>itesar.cz Jaroslav Tesař | Články o webech</title>
+    <%- include('partials/links') %>
+  </head>
+  <body>
+    <%- include('partials/cookie-banner') %>
+    <main>
+      <div class="header"><%- include('./partials/navbar') %></div>
+      <section id="title"></section>
+      <div class="title-z">
+        <h1>www <span class="highlight">ČLÁNKY</span></h1>
+      </div>
+      <div class="sub-page about-article">
+        <div class="content-article">
+          <div class="content-article-title">
+            <div class="content-article-title-image">
+              <img
+                class="painting"
+                src="./images/article-image-tiny.png"
+                alt="Barevný obrázek | Jak monitor míchá barvy."
+              />
+            </div>
+
+            <div class="content-article-title-text">
+              <h2>Jak se zobrazují na vašem webu barvy.</h2>
+            </div>
+          </div>
+          <div class="content-article-text">
+            <p class="subheadline">
+              Na rozdíl od přírody nebo běžných věcí monitor světlo vyzařuje a
+              nepohlcuje. Aby nějakou barvu vytvořil "namíchá" ji z červené,
+              zelené a modré. Nejmenší částečka, tzv. pixel, tak má 3 svítící
+              body a každý z nich umí svítit jednou z těchto barev různou
+              intenzitou.
+            </p>
+            <a href="/color">ZDE </a>si to sami vyzkoušejte a zadejte tři
+            hodnoty (od 0 do 255) oddělené čárkou nebo mezerou, postupně pro
+            červenou, zelenou a modrou.<br />
+            Když se tvoří internetová stránka, řeknete stejně internetovému
+            prohlížeči, že chcete například olivovou tímto kódem: rgb(226, 226,
+            182).
+          </div>
+        </div>
+      </div>
+    </main>
+    <%- include('partials/footer') %>
+  </body>
+</html>
