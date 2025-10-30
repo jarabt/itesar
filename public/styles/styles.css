@@ -99,6 +99,10 @@ main:after {
   color: #6eacda;
   text-decoration: none;
 }
+/* The active (chosen) route */
+.menu-item.active::after {
+  width: 100%; /* stays underlined */
+}
 
 .logo {
   width: 50px;
