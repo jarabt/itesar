@@ -103,6 +103,9 @@ main:after {
 .menu-item.active::after {
   width: 100%; /* stays underlined */
 }
+.menu-item.active {
+  color: #6eacda;
+}
 
 .logo {
   width: 50px;
