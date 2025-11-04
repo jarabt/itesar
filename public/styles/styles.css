@@ -41,6 +41,23 @@ h2 {
   font-weight: bold;
   font-size: 20px;
   padding: 10px;
+  position: relative;
+}
+.accept-btn::after,
+.reject-btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 8px; /* adjust offset as needed */
+  height: 2px;
+  width: 0;
+  background: black;
+  pointer-events: none;
+}
+.accept-btn:hover::after,
+.reject-btn:hover::after {
+  width: 100%;
+  transition: width 300ms ease;
 }
 
 /* for sticky footer */
