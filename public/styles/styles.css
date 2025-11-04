@@ -14,13 +14,13 @@ h2 {
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  bottom: 20px;
+  bottom: 150px;
   left: 20px;
   right: 20px;
   background-color: #e2e2b6;
   padding: 15px;
   border-radius: 10px;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+  /* box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5); */
   max-width: 600px;
   margin: auto;
   z-index: 9999;
