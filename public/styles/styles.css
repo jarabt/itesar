@@ -379,6 +379,24 @@ dt {
   font-style: normal;
   font-size: 30px;
 }
+
+.contact-form {
+  font-size: 1.5rem;
+  font-weight: 450;
+  line-height: 1.5;
+}
+.form-button {
+  background: none;
+  color: inherit;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px;
+}
+
 .contact-card {
   padding: 20px;
   display: flex;

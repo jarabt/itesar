@@ -18,12 +18,26 @@
       <div class="sub-page about-article">
         <div class="content-article">
           <div class="content-article-title">
-            <div class="content-article-title-image">
-              <img
-                class="painting"
-                src="./images/packages-basic2.png"
-                alt="Obrázek krabice | Internetová prezentace."
-              />
+            <div class="contact-form">
+              <form action="/message" method="post">
+                <div class="form-input">
+                  <label for="name">jméno</label>
+                  <input type="text" id="name" name="name" />
+                </div>
+                <div class="form-input">
+                  <label for="email">email</label>
+                  <input type="email" id="email" name="email" />
+                </div>
+                <div class="form-input">
+                  <label for="tel">telefon</label>
+                  <input type="tel" id="tel" name="tel" />
+                </div>
+                <div class="form-input">
+                  <label for="message">vzkaz</label>
+                  <textarea id="message" name="message"></textarea>
+                </div>
+                <button class="form-button"><b>Odeslat</b></button>
+              </form>
             </div>
             <div class="content-article-title-text">
               <h2>Rychlý kontakt.</h2>
