@@ -3,57 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Máte zájem o tvorbu webových stránek, aplikací nebo online poradenství? Kontaktujte mě pomocí kontaktního formuláře."
-    />
-    <title>itesar.cz Jaroslav Tesař | Kontaktní formulář</title>
+    <meta name="description" content="Nabízím webové služby za tyto ceny." />
+    <title>itesar.cz Jaroslav Tesař | Ceník služeb</title>
     <%- include('partials/links') %>
   </head>
   <body>
     <%- include('partials/cookie-banner') %>
     <main>
       <div class="header"><%- include('./partials/navbar') %></div>
-      <div class="sub-page">
-        <div class="container-sub-page">
-          <h2 class="sub-title">Kontakt</h2>
-          <form action="/message" method="post">
-            <div class="card contact-card">
-              <div>
-                <div class="contact-card-small-item">
-                  <label for="name"><b>JMÉNO</b></label
-                  ><br />
-                  <input type="text" id="name" name="name" />
-                </div>
-                <div class="contact-card-small-item">
-                  <label for="email"><b>EMAIL</b></label
-                  ><br />
-                  <input type="email" id="email" name="email" />
-                </div>
-                <div class="contact-card-small-item">
-                  <label for="tel"><b>TELEFON</b></label
-                  ><br />
-                  <input type="tel" id="tel" name="tel" />
-                </div>
-              </div>
-              <div>
-                <label for="message"><b>VZKAZ</b></label
-                ><br />
-                <textarea id="message" name="message"></textarea>
-              </div>
+      <section id="title"></section>
+      <div class="title-z">
+        <h1>ceník <span class="highlight">SLUŽEB</span></h1>
+      </div>
+      <div class="sub-page about-article">
+        <div class="content-article">
+          <div class="content-article-title">
+            <div class="content-article-title-image">
+              <img
+                class="painting"
+                src="./images/packages-basic2.png"
+                alt="Obrázek krabice | Internetová prezentace."
+              />
             </div>
-            <button class="button-contact"><b>Odeslat</b></button>
-          </form>
-          <br />
-          <br />
-          <dl>
-            <dt>Telefon</dt>
-            <dd>723 250 858</dd>
-            <dt>Email</dt>
-            <dd>info@itesar.cz</dd>
-            <dt>Adresa</dt>
-            <dd>Pod Kosířem 71, Prostějov</dd>
-          </dl>
+            <div class="content-article-title-text">
+              <h2>Základní balíček.</h2>
+            </div>
+          </div>
+          <div class="content-article-text">
+            <p>INTERNETOVÁ PREZENTACE</p>
+            <p>1490,- Kč</p>
+            <ul>
+              <li>design</li>
+              <li>vložení zákazníkových textů</li>
+              <li>vložení zákazníkových fotek</li>
+              <li>vložení zákazníkova loga (ve formátu .svg)</li>
+              <li>1 stránka, s maximálně 5-ti sekcemi</li>
+              <li>nastavení hostingu</li>
+              <li>termín 2 týdny</li>
+            </ul>
+          </div>
         </div>
       </div>
     </main>
