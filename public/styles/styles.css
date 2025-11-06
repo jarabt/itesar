@@ -55,6 +55,11 @@ body {
 }
 
 /* Navbar */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .container-header {
   display: flex;
   align-items: center;
