@@ -59,36 +59,8 @@ app.get("/pricing", (req, res) => {
   res.render("pricing.ejs");
 });
 
-app.get("/mentoring", (req, res) => {
-  res.render("mentoring.ejs");
-});
-
 app.get("/contact", (req, res) => {
   res.render("contact.ejs");
-});
-
-app.get("/basic-package", (req, res) => {
-  res.render("basic-package.ejs");
-});
-
-app.get("/standard-package", (req, res) => {
-  res.render("standard-package.ejs");
-});
-
-app.get("/udemy-certificate", (req, res) => {
-  res.render("certificate-udemy.ejs");
-});
-
-app.get("/online-marketing-completed", (req, res) => {
-  res.render("online-marketing-completed.ejs");
-});
-
-app.get("/online-marketing-qualification-1", (req, res) => {
-  res.render("online-marketing-qualification-1.ejs");
-});
-
-app.get("/online-marketing-qualification-2", (req, res) => {
-  res.render("online-marketing-qualification-2.ejs");
 });
 
 // Endpoint to handle form submission - this is where the email will be sent
