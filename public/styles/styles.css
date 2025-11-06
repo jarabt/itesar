@@ -263,6 +263,10 @@ main:after {
 .painting {
   width: 100%;
 }
+h2 {
+  margin-left: 5px;
+  margin-right: 5px;
+}
 
 /* Color converter */
 .container-about {
@@ -315,19 +319,6 @@ main:after {
   .copyright {
     grid-column-start: 1;
     grid-column-end: 2;
-  }
-  .container-thumbs img {
-    width: 90%;
-    height: auto;
-  }
-  .container-image {
-    overflow: auto;
-    width: 100%;
-    height: auto;
-  }
-  .container-image img {
-    width: 750px;
-    height: auto;
   }
   .content-article-title-image {
     width: 350px;
