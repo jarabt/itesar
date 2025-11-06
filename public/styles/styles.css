@@ -369,6 +369,9 @@ h2 {
   .content-article-title-image {
     width: 300px;
   }
+  #message {
+    width: 100%;
+  }
 }
 @media (max-width: 360px) {
   .article {
