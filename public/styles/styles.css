@@ -3,7 +3,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-/* Cookie banner */
+/* Cookie Banner */
 .cookie-banner {
   display: none;
   flex-direction: column;
@@ -52,4 +52,63 @@ body {
 .reject-btn:hover::after {
   width: 100%;
   transition: width 300ms ease;
+}
+
+/* Navbar */
+.container-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 7vh;
+  width: 90%;
+}
+.menu-item {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px;
+  position: relative;
+}
+.menu-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 8px;
+  height: 2px;
+  width: 0;
+  background: black;
+  pointer-events: none;
+}
+.menu-item:hover::after {
+  width: 100%;
+  transition: width 300ms ease;
+}
+.menu-item:hover {
+  color: #6eacda;
+  text-decoration: none;
+}
+/* The active (chosen) route */
+.menu-item.active::after {
+  /* stays underlined */
+  width: 100%;
+}
+.menu-item.active {
+  color: #6eacda;
+}
+.logo {
+  width: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.menu {
+  display: flex;
+  gap: 1rem;
+}
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
