@@ -148,3 +148,22 @@ h1 {
   color: #03346e;
   font-style: italic;
 }
+
+/* index.ejs */
+.article {
+  font-size: 1.5rem;
+  font-weight: 450;
+  margin-top: 35vh;
+  line-height: 1.5;
+  /* https://thecascade.dev/article/least-amount-of-css/ */
+  max-width: min(55ch, 100% - 4rem);
+  margin-inline: auto;
+}
+.benefit {
+  color: #03346e;
+  font-style: italic;
+}
+.article a {
+  text-decoration: none;
+  color: inherit;
+}
