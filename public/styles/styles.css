@@ -117,3 +117,34 @@ body {
   border: none;
   cursor: pointer;
 }
+
+/* Title */
+#title {
+  background-color: #6eacda;
+  position: absolute;
+  top: 9vh;
+  left: 0px;
+  height: 30vh;
+  width: 100%;
+  z-index: -1;
+}
+.title-z {
+  position: absolute;
+  top: 9vh;
+  left: 0px;
+  height: 30vh;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-weight: 900;
+  font-size: 70px;
+  text-align: center;
+}
+.highlight {
+  color: #03346e;
+  font-style: italic;
+}
