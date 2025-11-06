@@ -167,3 +167,49 @@ h1 {
   text-decoration: none;
   color: inherit;
 }
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  background-color: #6eacda;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  z-index: 10;
+}
+.container-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 90%;
+}
+.footer a {
+  text-decoration: none;
+}
+.copyright {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  text-align: center;
+  padding: 10px;
+}
+.social-media-icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+/* for sticky footer */
+html,
+body {
+  height: 100%;
+}
+main {
+  min-height: 100%;
+  margin-bottom: -70px;
+}
+main:after {
+  content: "";
+  display: block;
+  height: 100px;
+}
