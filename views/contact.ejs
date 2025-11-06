@@ -21,39 +21,35 @@
             <div class="content-article-title-image">
               <div class="contact-form">
                 <form action="/message" method="post">
-                  <div class="form-input">
-                    <label for="message">vzkaz</label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      rows="5"
-                      cols="23"
-                      class="color-input"
-                    ></textarea>
-                  </div>
-                  <div class="form-input">
-                    <label for="name">jméno</label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      class="color-input"
-                    />
-                  </div>
-                  <div class="form-input">
-                    <label for="email">email</label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      class="color-input"
-                    />
-                  </div>
-                  <div class="form-input">
-                    <label for="tel">telefon</label>
-                    <input type="tel" id="tel" name="tel" class="color-input" />
-                  </div>
-                  <div class="form-input"></div>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    cols="23"
+                    class="color-input"
+                    placeholder="Vzkaz"
+                  ></textarea>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="color-input"
+                    placeholder="Jméno"
+                  />
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="color-input"
+                    placeholder="Email"
+                  />
+                  <input
+                    type="tel"
+                    id="tel"
+                    name="tel"
+                    class="color-input"
+                    placeholder="Telefon"
+                  />
                   <button class="form-button"><b>Odeslat</b></button>
                 </form>
               </div>
