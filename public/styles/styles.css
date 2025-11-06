@@ -26,7 +26,7 @@ body {
 }
 .my-btn:hover::after {
   width: 100%;
-  transition: width 300ms ease;
+  /* transition: width 300ms ease; */
 }
 
 /* Cookie Banner */
@@ -84,7 +84,7 @@ body {
 }
 .menu-item:hover::after {
   width: 100%;
-  transition: width 300ms ease;
+  /* transition: width 300ms ease; */
 }
 .menu-item:hover {
   color: #6eacda;
