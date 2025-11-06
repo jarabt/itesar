@@ -330,6 +330,9 @@ h2 {
   .content-article-title-image {
     width: 350px;
   }
+  #message {
+    font-size: 16px;
+  }
 }
 @media (max-width: 650px) {
   .menu {
