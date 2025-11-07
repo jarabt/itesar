@@ -36,13 +36,13 @@ body {
   cursor: pointer;
   outline: inherit;
 }
-a {
+.my-a {
   text-decoration: none;
   color: inherit;
   position: relative;
   padding: 10px;
 }
-a::after {
+.my-a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -52,7 +52,7 @@ a::after {
   background: black;
   pointer-events: none;
 }
-a:hover::after {
+.my-a:hover::after {
   width: 100%;
 }
 
