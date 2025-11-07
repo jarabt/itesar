@@ -118,7 +118,7 @@ a:hover::after {
   /* transition: width 300ms ease; */
 }
 .menu-item:hover {
-  color: #6eacda;
+  /* color: #6eacda; */
   text-decoration: none;
 }
 /* The active (chosen) route */
