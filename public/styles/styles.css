@@ -36,6 +36,25 @@ body {
   cursor: pointer;
   outline: inherit;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  padding: 10px;
+}
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 8px;
+  height: 2px;
+  width: 0;
+  background: black;
+  pointer-events: none;
+}
+a:hover::after {
+  width: 100%;
+}
 
 /* Cookie Banner */
 .cookie-banner {
@@ -173,10 +192,6 @@ h1 {
 .benefit {
   color: #03346e;
   font-style: italic;
-}
-.article a {
-  text-decoration: none;
-  color: inherit;
 }
 
 /* Footer */
