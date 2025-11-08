@@ -16,7 +16,9 @@
         <h1>www <span class="highlight">ČLÁNKY</span></h1>
       </div>
       <div class="about-article"></div>
-      <div><%= articles[0].headline %><br /><%= articles[0].subheadline %></div>
+      <% articles.forEach(item => { %> <%= item.headline %><br /><%=
+      item.subheadline %><br />
+      <% }); %>
     </main>
     <%- include('partials/footer') %>
   </body>
