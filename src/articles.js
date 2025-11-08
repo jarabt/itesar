@@ -38,3 +38,5 @@ const articles = [
               a co chci přesně aby to dělalo.`,
   },
 ];
+
+export { articles };

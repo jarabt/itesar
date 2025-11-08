@@ -2,6 +2,7 @@ import express from "express";
 import winston from "winston";
 import env from "dotenv";
 import nodemailer from "nodemailer";
+import { articles } from "./src/articles.js";
 
 const app = express();
 env.config();
@@ -52,6 +53,7 @@ app.get("/about", (req, res) => {
 });
 
 app.get("/articles", (req, res) => {
+  console.log(articles[0].id);
   res.render("articles.ejs");
 });
 
