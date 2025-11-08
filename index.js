@@ -53,8 +53,8 @@ app.get("/about", (req, res) => {
 });
 
 app.get("/articles", (req, res) => {
-  console.log(articles[0].id);
-  res.render("articles.ejs");
+  // console.log(articles[0].id);
+  res.render("articles.ejs", { articles });
 });
 
 app.get("/pricing", (req, res) => {
