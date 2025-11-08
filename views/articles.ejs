@@ -16,8 +16,9 @@
         <h1>www <span class="highlight">ČLÁNKY</span></h1>
       </div>
       <div class="about-article"></div>
-      <% articles.forEach(item => { %> <%= item.headline %><br /><%=
-      item.subheadline %><br />
+      <% articles.forEach(item => { %>
+      <img src="/article_images/<%= item.id %>.png" alt="Obrázek ke článku" />
+      <%= item.headline %><br /><%= item.subheadline %><br />
       <% }); %>
     </main>
     <%- include('partials/footer') %>
