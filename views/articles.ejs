@@ -17,7 +17,11 @@
       </div>
       <div class="about-article"></div>
       <% articles.forEach(item => { %>
-      <img src="/article_images/<%= item.id %>.png" alt="Obrázek ke článku" />
+      <img
+        src="/article_images/<%= item.id %>.png"
+        alt="Obrázek ke článku"
+        class="articles-list-img"
+      />
       <%= item.headline %><br /><%= item.subheadline %><br />
       <% }); %>
     </main>

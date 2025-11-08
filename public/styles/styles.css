@@ -291,6 +291,9 @@ h2 {
   margin-left: 5px;
   margin-right: 5px;
 }
+.articles-list-img {
+  width: 25%;
+}
 
 /* Contact Form */
 .contact-input {
