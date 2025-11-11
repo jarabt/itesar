@@ -82,6 +82,11 @@ app.post("/message", async (req, res) => {
   res.redirect("/");
 });
 
+app.post("/show-article", async (req, res) => {
+  const id = req.body["id"];
+  console.log(id);
+});
+
 app.listen(port, () => {
   logger.info(`Server running on port ${port}`);
 });

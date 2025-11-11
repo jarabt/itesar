@@ -26,7 +26,12 @@
             />
             <div class="articles-list-item-right">
               <div>
-                <a href="/color" class="my-a"><%= item.headline %></a>
+                <form action="show-article" method="POST">
+                  <input type="hidden" name="id" value="<%= item.id %>" />
+                  <button class="articles-list-item-title-button">
+                    <%= item.headline %>
+                  </button>
+                </form>
                 <p><%= item.subheadline %></p>
               </div>
               <p class="articles-list-item-date"><%= item.date %></p>
