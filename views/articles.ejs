@@ -24,7 +24,11 @@
               alt="Obrázek ke článku"
               class="articles-list-img"
             />
-            <%= item.headline %><br /><%= item.subheadline %><br />
+            <div class="articles-list-item-right">
+              <p><%= item.headline %></p>
+              <p><%= item.subheadline %></p>
+              <hr />
+            </div>
           </div>
           <% }); %>
         </div>

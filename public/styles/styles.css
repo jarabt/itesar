@@ -303,8 +303,14 @@ main:after {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  width: 800px;
   gap: 20px;
+}
+.articles-list-item-right {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 500px;
 }
 /* .articles-list-item {
   margin-top: 50px;
