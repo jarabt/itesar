@@ -21,7 +21,7 @@
           <div class="articles-list-item">
             <img
               src="/article_images/<%= item.id %>.png"
-              alt="Obrázek ke článku"
+              alt="<%= item.alt %>"
               class="articles-list-img"
             />
             <div class="articles-list-item-right">
@@ -29,6 +29,7 @@
                 <a href="/color" class="my-a"><%= item.headline %></a>
                 <p><%= item.subheadline %></p>
               </div>
+              <p class="articles-list-item-date"><%= item.date %></p>
             </div>
           </div>
           <% }); %>

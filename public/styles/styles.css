@@ -325,9 +325,11 @@ main:after {
 }
 .articles-list-item-right a {
   color: #03346e;
-  font-size: 1.2rem;
   font-size: 20px;
   font-weight: 500;
+}
+.articles-list-item-date {
+  font-size: 15px;
 }
 
 .painting {
