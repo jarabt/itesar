@@ -284,6 +284,12 @@ main:after {
 }
 
 /* Articles */
+.articles-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .painting {
   width: 100%;
 }
@@ -293,6 +299,16 @@ h2 {
 }
 .articles-list-img {
   width: 25%;
+}
+.articles-list-item {
+  margin-top: 50px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1.2rem;
+  width: 90%;
+  gap: 50px;
 }
 
 /* Contact Form */
