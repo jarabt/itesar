@@ -333,7 +333,8 @@ h2 {
   margin-left: 5px;
   margin-right: 5px;
 }
-.articles-list-img {
+.articles-list-img,
+.articles-list-item-right {
   height: 270px;
 }
 
