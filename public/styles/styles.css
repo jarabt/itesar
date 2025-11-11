@@ -312,6 +312,9 @@ main:after {
   flex-direction: column;
   width: 500px;
 }
+.articles-list-item-right hr {
+  width: 100%;
+}
 /* .articles-list-item {
   margin-top: 50px;
   display: flex;
