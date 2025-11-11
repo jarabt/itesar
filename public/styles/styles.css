@@ -40,7 +40,7 @@ body {
   text-decoration: none;
   color: inherit;
   position: relative;
-  padding: 10px;
+  padding-bottom: 10px;
 }
 .my-a::after {
   content: "";
