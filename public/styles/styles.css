@@ -312,6 +312,9 @@ main:after {
   flex-direction: column;
   width: 500px;
   height: 100%;
+  border-bottom-color: #e2e2b6;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
 }
 .articles-list-item-right hr {
   width: 100%;
