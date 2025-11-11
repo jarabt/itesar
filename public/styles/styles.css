@@ -1,6 +1,7 @@
 /* Global Styles */
 body {
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
+  font-family: "Work Sans", sans-serif;
 }
 .my-btn {
   background: none;
@@ -98,10 +99,11 @@ body {
 .menu-item {
   text-decoration: none;
   color: #000;
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 500;
   padding: 10px;
   position: relative;
+  font-style: italic;
 }
 .menu-item::after {
   content: "";
@@ -140,7 +142,7 @@ body {
 }
 .menu-toggle {
   display: none;
-  font-size: 2rem;
+  font-size: 19px;
   background: none;
   border: none;
   cursor: pointer;
@@ -168,7 +170,7 @@ body {
   align-items: center;
 }
 h1 {
-  font-weight: 900;
+  font-weight: 600;
   font-size: 70px;
   text-align: center;
   margin-left: 5px;
@@ -177,6 +179,7 @@ h1 {
 .highlight {
   color: #03346e;
   font-style: italic;
+  font-weight: 900;
 }
 
 /* index.ejs */
