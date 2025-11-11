@@ -289,18 +289,16 @@ main:after {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-.painting {
-  width: 100%;
-}
-h2 {
-  margin-left: 5px;
-  margin-right: 5px;
-}
-.articles-list-img {
-  width: 25%;
+  margin-top: 35vh;
 }
 .articles-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 800px;
+}
+/* .articles-list-item {
   margin-top: 50px;
   display: flex;
   align-items: flex-start;
@@ -309,6 +307,16 @@ h2 {
   font-size: 1.2rem;
   width: 90%;
   gap: 50px;
+} */
+.painting {
+  width: 100%;
+}
+h2 {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.articles-list-img {
+  width: 300px;
 }
 
 /* Contact Form */
