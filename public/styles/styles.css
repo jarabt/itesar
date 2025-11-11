@@ -305,30 +305,34 @@ main:after {
   flex-direction: row;
   gap: 20px;
 }
+.articles-list-img,
+.articles-list-item-right {
+  height: 270px;
+}
 .articles-list-item-right {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: column;
   width: 500px;
-  height: 100%;
   border-bottom-color: #e2e2b6;
   border-bottom-style: solid;
   border-bottom-width: 1px;
+  line-height: 1.5;
 }
-.articles-list-item-right hr {
-  width: 100%;
+.articles-list-item-right a {
+  color: #03346e;
+  font-size: 1.2rem;
+  font-size: 20px;
+  font-weight: 500;
 }
+
 .painting {
   width: 100%;
 }
 h2 {
   margin-left: 5px;
   margin-right: 5px;
-}
-.articles-list-img,
-.articles-list-item-right {
-  height: 270px;
 }
 
 /* Contact Form */
