@@ -307,7 +307,7 @@ main:after {
 }
 .articles-list-item-right {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-start;
   flex-direction: column;
   width: 500px;
@@ -316,16 +316,6 @@ main:after {
 .articles-list-item-right hr {
   width: 100%;
 }
-/* .articles-list-item {
-  margin-top: 50px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-  font-size: 1.2rem;
-  width: 90%;
-  gap: 50px;
-} */
 .painting {
   width: 100%;
 }
