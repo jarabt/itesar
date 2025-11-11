@@ -284,12 +284,18 @@ main:after {
 }
 
 /* Articles */
+.bellow-title-z {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35vh;
+}
 .articles-list {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 35vh;
+  width: 90%;
 }
 .articles-list-item {
   display: flex;
