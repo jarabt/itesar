@@ -82,9 +82,10 @@ app.post("/message", async (req, res) => {
   res.redirect("/");
 });
 
-app.post("/show-article", async (req, res) => {
+app.post("/show-article", (req, res) => {
   const id = req.body["id"];
   console.log(id);
+  res.render("./article-item.ejs");
 });
 
 app.listen(port, () => {
