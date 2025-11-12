@@ -8,9 +8,9 @@ const articles = [
                 nepohlcuje.`,
     content: `Aby nějakou barvu vytvořil "namíchá" ji z červené, zelené a modré.
               Nejmenší částečka, tzv. pixel, tak má 3 svítící body a každý z
-              nich umí svítit jednou z těchto barev různou intenzitou.<b
+              nich umí svítit jednou z těchto barev různou intenzitou. <b
                 ><a href="/color" class="my-a">Zde</a></b
-              >si to sami vyzkoušejte a zadejte tři hodnoty (od 0 do 255)
+              > si to sami vyzkoušejte a zadejte tři hodnoty (od 0 do 255)
               oddělené čárkou nebo mezerou, postupně pro červenou, zelenou a
               modrou. Když se tvoří internetová stránka, řeknete stejně
               internetovému prohlížeči, že chcete například olivovou tímto
