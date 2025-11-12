@@ -85,7 +85,10 @@ app.post("/message", async (req, res) => {
 app.post("/show-article", (req, res) => {
   const id = req.body["id"];
   console.log(id);
-  res.render("./article-item.ejs");
+  console.log(articles);
+  const article = articles.find((item) => item.id == id);
+  console.log(article);
+  res.render("./article-item.ejs", { article });
 });
 
 app.listen(port, () => {
