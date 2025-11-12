@@ -15,7 +15,16 @@
       <div class="title-z">
         <h1><%= article.headline %></h1>
       </div>
-      <div class="bellow-title-z"></div>
+      <div class="bellow-title-z">
+        <div class="content-article">
+          <img
+            src="/article_images/<%= article.id %>.png"
+            alt="<%= article.alt %>"
+          /><br />
+          <%= article.subheadline %><br />
+          <p><%= article.content %></p>
+        </div>
+      </div>
     </main>
     <%- include('partials/footer') %>
   </body>
