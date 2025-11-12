@@ -405,6 +405,9 @@ h2 {
   .articles-list-item-subheadline {
     display: none;
   }
+  .articles-list-img {
+    object-fit: cover;
+  }
 }
 @media (max-width: 800px) {
   h1 {
