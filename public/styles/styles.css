@@ -308,6 +308,7 @@ main:after {
   flex-direction: row;
   gap: 20px;
   height: 272px;
+  width: 900px;
 }
 .articles-list-img,
 .articles-list-item-right {
@@ -323,7 +324,6 @@ main:after {
   border-bottom-style: solid;
   border-bottom-width: 1px;
   line-height: 1.5;
-  width: 500px;
 }
 .articles-list-item-right a {
   color: #03346e;
@@ -400,15 +400,12 @@ h2 {
 @media (max-width: 1000px) {
   .articles-list-item {
     height: 240px;
-  }
-  .articles-list-item-right {
-    width: auto;
+    width: 100%;
   }
   .articles-list-item-subheadline {
     display: none;
   }
 }
-
 @media (max-width: 800px) {
   h1 {
     font-size: 35px;
@@ -459,6 +456,10 @@ h2 {
     width: 300px;
   }
   #message {
+    width: 100%;
+  }
+  .articles-list-item {
+    height: 110px;
     width: 100%;
   }
 }
