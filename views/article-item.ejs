@@ -20,9 +20,12 @@
           <img
             src="/article_images/<%= article.id %>.png"
             alt="<%= article.alt %>"
-          /><br />
-          <%= article.subheadline %><br />
-          <p><%= article.content %></p>
+            class="content-article-title-image"
+          />
+          <div class="content-article-text">
+            <p><b><%= article.subheadline %></b></p>
+            <p><%= article.content %></p>
+          </div>
         </div>
       </div>
     </main>
