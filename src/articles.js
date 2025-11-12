@@ -2,6 +2,7 @@ const articles = [
   {
     id: 1,
     headline: "Jak se zobrazují barvy na vašem webu.",
+    url: "jak-se-zobrazuji-barvy-na-vasem-webu",
     subheadline: `Na rozdíl od přírody nebo běžných věcí monitor, když ukazuje
                 grafiku na vašem webu (logo, fotky apod.), světlo vyzařuje a
                 nepohlcuje.`,
@@ -20,6 +21,7 @@ const articles = [
   {
     id: 2,
     headline: "Nástroje pro vývoj webů.",
+    url: "nastroje-pro-vyvoj-webu",
     subheadline: `Internetový prohlížeč (Chrome, Firefox, Edge...) je okno,
                 kterým se návštěvníci dívají na naše stránky. Co mu musíme
                 nabídnout, aby zobrazoval to, co chceme a jak chceme?`,

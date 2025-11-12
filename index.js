@@ -82,13 +82,13 @@ app.post("/message", async (req, res) => {
   res.redirect("/");
 });
 
-app.post("/show-article", (req, res) => {
-  const id = req.body["id"];
-  console.log(id);
-  console.log(articles);
-  const article = articles.find((item) => item.id == id);
-  console.log(article);
-  res.render("./article-item.ejs", { article });
+app.get("/show-article/:url", (req, res) => {
+  const url = req.params.url;
+  console.log(url);
+  // console.log(articles);
+  // const article = articles.find((item) => item.id == id);
+  // console.log(article);
+  // res.render("./article-item.ejs", { article });
 });
 
 app.listen(port, () => {
