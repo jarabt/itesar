@@ -43,43 +43,6 @@ app.get("/", (req, res) => {
   res.render("./index.ejs");
 });
 
-app.get("/color", (req, res) => {
-  res.render("color.ejs");
-});
-
-app.get("/about", (req, res) => {
-  res.render("about.ejs");
-});
-
-app.get("/articles", (req, res) => {
-  res.render("articles.ejs");
-});
-
-app.get("/pricing", (req, res) => {
-  res.render("pricing.ejs");
-});
-
-app.get("/contact", (req, res) => {
-  res.render("contact.ejs");
-});
-
-// Endpoint to handle form submission - this is where the email will be sent
-app.post("/message", async (req, res) => {
-  try {
-    const info = await transporter.sendMail({
-      from: "jarabt@seznam.cz", // sender address
-      to: process.env.EMAIL_RECEIVER, // list of receivers
-      subject: "Message from itesar.cz website", // Subject line
-      // text: req.body.message, // plain text body
-      html: `<b>Sender's name: </b>${req.body.name}<br><b>Sender's email: </b>${req.body.email}<br><b>Message: </b>${req.body.message}`, // html body
-    });
-    logger.info(info);
-  } catch (err) {
-    logger.error(err);
-  }
-  res.redirect("/");
-});
-
 app.listen(port, () => {
   logger.info(`Server running on port ${port}`);
 });
