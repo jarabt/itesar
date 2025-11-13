@@ -1,5 +1,25 @@
 const articles = [
   {
+    id: 3,
+    headline: "Jak nakódovat barvu?",
+    url: "jak-nakodovat-barvu",
+    subheadline: `Nejpoužívanějšími formáty pro definici barvy jsou RGB    
+                a HEX. V čem se liší kde se uvádějí?`,
+    content: `Jak uvádím v článku <b><a href="/nastroje-pro-vyvoj-webu" class="my-a">
+              "Nástroje pro vývoj webu"</a></b> to, jak obsah na našem webu vypadá, 
+              to znamená včetně barev, je zodpovědný soubor css (z anglického 
+              "Cascading Style Sheets"). Právě zde se definice barev uvádějí.</p>
+              <p>RGB formát, jsem již zčásti popsal v článku <b>
+              <a href="/jak-se-zobrazuji-barvy-na-vasem-monitoru" class="my-a">
+              "Jak se zobrazují barvy na vašem monitoru?"</a></b>. Zkratka RGB jsou
+              počáteční písmena anglických názvů barev "red" "gree" a "blue". V tomto
+              pořadí se uvádějí do závorky jako jejich intenzita vyjádřená číslem
+              v rozmezí 0 - 255). Takže červená je například "rgb(255, 0, 0)."
+               `,
+    date: "13.11.2025",
+    alt: "itesar | Obrazovka s kódem",
+  },
+  {
     id: 2,
     headline: "Nástroje pro vývoj webů",
     url: "nastroje-pro-vyvoj-webu",
@@ -26,8 +46,8 @@ const articles = [
   },
   {
     id: 1,
-    headline: "Jak se zobrazují barvy na monitoru?",
-    url: "jak-se-zobrazuji-barvy-na-vasem-monitoru?",
+    headline: "Jak se zobrazují barvy na vašem monitoru?",
+    url: "jak-se-zobrazuji-barvy-na-vasem-monitoru",
     subheadline: `Na rozdíl od přírody nebo běžných věcí monitor, když ukazuje
                 grafiku na vašem webu (logo, fotky apod.), světlo vyzařuje a
                 nepohlcuje.`,
