@@ -46,7 +46,7 @@ const articles = [
               je sám, tedy soubory .html, .css, .js, vytvořit. Výhodou druhého
               je naprostá svoboda - tedy co to má být, jak chci aby to vypadalo
               a co chci přesně aby to dělalo.`,
-    date: "3.11.2025",
+    date: "3.10.2025",
     alt: "itesar | Nástroje",
   },
   {
@@ -65,7 +65,7 @@ const articles = [
               modrou. Když se tvoří internetová stránka, řeknete stejně
               internetovému prohlížeči, že chcete například olivovou tímto
               kódem: rgb(226, 226, 182).`,
-    date: "15.10.2025",
+    date: "15.09.2025",
     alt: "itesar | Obraz s barvami",
   },
 ];
