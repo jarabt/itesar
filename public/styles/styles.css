@@ -43,18 +43,8 @@ body {
   position: relative;
   padding-bottom: 10px;
 }
-.my-a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 8px;
-  height: 2px;
-  width: 0;
-  background: black;
-  pointer-events: none;
-}
-.my-a:hover::after {
-  width: 100%;
+.my-a:hover {
+  color: #6eacda;
 }
 
 /* Cookie Banner */
