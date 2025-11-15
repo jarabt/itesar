@@ -7,14 +7,19 @@ const articles = [
                 a HEX. V čem se liší kde se uvádějí?`,
     content: `Jak uvádím v článku <b><a href="/nastroje-pro-vyvoj-webu" class="my-a">
               "Nástroje pro vývoj webu"</a></b> to, jak obsah na našem webu vypadá, 
-              to znamená včetně barev, je zodpovědný soubor css (z anglického 
-              "Cascading Style Sheets"). Právě zde se definice barev uvádějí.</p>
+              je zodpovědný soubor css (z anglického 
+              "<b>c</b>ascading <b>s</b>tyle <b>s</b>heets"). Právě zde se definice barev uvádějí.</p>
               <p>RGB formát, jsem již zčásti popsal v článku <b>
               <a href="/jak-se-zobrazuji-barvy-na-vasem-monitoru" class="my-a">
               "Jak se zobrazují barvy na vašem monitoru?"</a></b>. Zkratka RGB jsou
               počáteční písmena anglických názvů barev "red" "gree" a "blue". V tomto
               pořadí se uvádějí do závorky jako jejich intenzita vyjádřená číslem
-              v rozmezí 0 - 255). Takže červená je například "rgb(255, 0, 0)."
+              v rozmezí 0 - 255. Takže červená je například "rgb(255, 0, 0)."<br>
+              Ten samý princip používá i "HEX" s tím rozdílem, že čísla uvádí za # symbol a 
+              těsně za sebe. Čísla jsou ale navíc v šestnáctkové soustavě. Červená je
+              tedy "#ff0000".<br>
+              Na automatické převody mezi formáty se používají převodníky. Jeden z nich (z RGB na HEX)
+              si můžete vyzkoušet <b><a href="/color" class="my-a">zde</a></b>.
                `,
     date: "13.11.2025",
     alt: "itesar | Obrazovka s kódem",
