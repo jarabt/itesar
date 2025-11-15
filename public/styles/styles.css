@@ -386,8 +386,6 @@ h2 {
   .content-article-title-image {
     width: 470px;
   }
-}
-@media (max-width: 1000px) {
   .articles-list-item {
     height: 240px;
     width: 100%;
