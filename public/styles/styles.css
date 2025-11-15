@@ -302,7 +302,7 @@ main:after {
 }
 .articles-list-img,
 .articles-list-item-right {
-  flex: 1;
+  width: 50%;
   height: 100%;
 }
 .articles-list-item-right {
@@ -452,8 +452,11 @@ h2 {
     width: 100%;
   }
   .articles-list-item {
-    height: 110px;
+    height: 150px;
     width: 100%;
+  }
+  .articles-list-item-right a {
+    font-size: 15px;
   }
 }
 @media (max-width: 360px) {
