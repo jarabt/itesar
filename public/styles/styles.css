@@ -323,6 +323,7 @@ main:after {
 .articles-list-item-date {
   font-size: 15px;
   color: #03346e;
+  margin-bottom: 20px;
 }
 .painting {
   width: 100%;
