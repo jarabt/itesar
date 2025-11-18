@@ -173,6 +173,11 @@ h1 {
 }
 
 /* index.ejs */
+.hero {
+  font-size: 23px;
+  font-weight: 350;
+}
+
 .article {
   font-size: 1.5rem;
   font-weight: 450;
