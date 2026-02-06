@@ -466,7 +466,3 @@ h2 {
     width: 250px;
   }
 }
-
-@view-transition {
-  navigation: auto;
-}
