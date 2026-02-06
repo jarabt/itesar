@@ -2,7 +2,6 @@ import express from "express";
 import winston from "winston";
 import env from "dotenv";
 import nodemailer from "nodemailer";
-import { articles } from "./src/articles.js";
 
 const app = express();
 env.config();
@@ -48,11 +47,6 @@ app.get("/color", (req, res) => {
   res.render("color.ejs");
 });
 
-app.get("/articles", (req, res) => {
-  // console.log(articles[0].id);
-  res.render("articles.ejs", { articles });
-});
-
 app.get("/pricing", (req, res) => {
   res.render("pricing.ejs");
 });
@@ -76,14 +70,6 @@ app.post("/message", async (req, res) => {
     logger.error(err);
   }
   res.redirect("/");
-});
-
-app.get("/:url", (req, res) => {
-  const url = req.params.url;
-  console.log(url);
-  const article = articles.find((item) => item.url === url);
-  console.log(article);
-  res.render("article-item.ejs", { article });
 });
 
 app.listen(port, () => {
