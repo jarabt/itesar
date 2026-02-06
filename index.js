@@ -47,10 +47,6 @@ app.get("/color", (req, res) => {
   res.render("color.ejs");
 });
 
-app.get("/pricing", (req, res) => {
-  res.render("pricing.ejs");
-});
-
 app.get("/contact", (req, res) => {
   res.render("contact.ejs");
 });
