@@ -48,10 +48,6 @@ app.get("/color", (req, res) => {
   res.render("color.ejs");
 });
 
-app.get("/about", (req, res) => {
-  res.render("about.ejs");
-});
-
 app.get("/articles", (req, res) => {
   // console.log(articles[0].id);
   res.render("articles.ejs", { articles });
