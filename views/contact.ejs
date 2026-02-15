@@ -31,12 +31,14 @@
       <div class="article">
         <h2>Napište mi nebo zavolejte</h2>
         <form action="/message" method="post">
+          <label for="message" class="sr-only">Vzkaz</label>
           <textarea
             id="message"
             name="message"
             class="contact-input"
             placeholder="Vzkaz"
           ></textarea>
+          <label for="name" class="sr-only">Jméno</label>
           <input
             type="text"
             id="name"
@@ -44,6 +46,7 @@
             class="contact-input"
             placeholder="Jméno"
           />
+          <label for="email" class="sr-only">Email</label>
           <input
             type="email"
             id="email"
@@ -51,6 +54,7 @@
             class="contact-input"
             placeholder="Email"
           />
+          <label for="tel" class="sr-only">Telefon</label>
           <input
             type="tel"
             id="tel"
