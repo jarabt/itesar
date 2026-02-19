@@ -1,8 +1,12 @@
 /* Global Styles */
 body {
-  /* font-family: "Roboto", sans-serif; */
   font-family: "Work Sans", sans-serif;
 }
+
+#contact {
+  margin-top: 50px;
+}
+
 .my-btn {
   background: none;
   color: inherit;
