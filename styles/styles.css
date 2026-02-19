@@ -1,6 +1,7 @@
 /* Global Styles */
 body {
   font-family: "Work Sans", sans-serif;
+  margin: 0;
 }
 
 #contact {
@@ -79,22 +80,9 @@ body {
 }
 
 /* Title */
-#title {
-  background-color: #6eacda;
-  position: absolute;
-  top: 80px;
-  left: 0px;
-  height: 30vh;
-  width: 100%;
-  z-index: -1;
-}
 .title-z {
-  position: absolute;
-  top: 80px;
-  left: 0px;
+  background-color: #6eacda;
   height: 30vh;
-  width: 100%;
-  z-index: 10;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -129,10 +117,6 @@ h2 {
   align-items: center;
   height: 70px;
   background-color: #6eacda;
-  width: 100%;
-  position: absolute;
-  left: 0px;
-  z-index: 10;
 }
 .container-footer {
   display: grid;
@@ -153,20 +137,6 @@ h2 {
   justify-content: flex-end;
   align-items: center;
 }
-/* for sticky footer */
-html,
-body {
-  height: 100%;
-}
-main {
-  min-height: 100%;
-  margin-bottom: -70px;
-}
-main:after {
-  content: "";
-  display: block;
-  height: 100px;
-}
 
 /* About */
 .sub-page {
@@ -174,7 +144,7 @@ main:after {
   justify-content: center;
 }
 .about-article {
-  margin-top: 35vh;
+  margin-top: 0;
 }
 .content-article {
   margin-top: 50px;
