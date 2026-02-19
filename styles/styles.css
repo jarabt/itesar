@@ -88,11 +88,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-#title h2 {
-  text-align: center;
-  margin-left: 5px;
-  margin-right: 5px;
-}
 h1 {
   font-weight: 600;
   font-size: 60px;
