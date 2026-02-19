@@ -7,32 +7,6 @@ body {
   margin-top: 50px;
 }
 
-.my-btn {
-  background: none;
-  color: inherit;
-  border: none;
-  font: inherit;
-  cursor: pointer;
-  outline: inherit;
-  font-weight: bold;
-  font-size: 20px;
-  padding: 10px;
-  position: relative;
-}
-.my-btn::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 8px;
-  height: 2px;
-  width: 0;
-  background: black;
-  pointer-events: none;
-}
-.my-btn:hover::after {
-  width: 100%;
-  /* transition: width 300ms ease; */
-}
 .my-a {
   text-decoration: none;
   color: inherit;
@@ -77,15 +51,11 @@ body {
 }
 .menu-item:hover::after {
   width: 100%;
-  /* transition: width 300ms ease; */
 }
 .menu-item:hover {
-  /* color: #6eacda; */
   text-decoration: none;
 }
-/* The active (chosen) route */
 .menu-item.active::after {
-  /* stays underlined */
   width: 100%;
 }
 .menu-item.active {
@@ -131,8 +101,6 @@ body {
   align-items: center;
 }
 .title-z h2 {
-  /* font-weight: 400;
-  font-size: 30px; */
   text-align: center;
   margin-left: 5px;
   margin-right: 5px;
@@ -144,25 +112,14 @@ h1 {
   margin-left: 5px;
   margin-right: 5px;
 }
+h2 {
+  margin-left: 5px;
+  margin-right: 5px;
+}
 .highlight {
   color: #03346e;
   font-style: italic;
   font-weight: 900;
-}
-
-/* index.ejs */
-.article {
-  font-size: 1.5rem;
-  font-weight: 450;
-  margin-top: 35vh;
-  line-height: 1.5;
-  /* https://thecascade.dev/article/least-amount-of-css/ */
-  max-width: min(55ch, 100% - 4rem);
-  margin-inline: auto;
-}
-.benefit {
-  color: #03346e;
-  font-style: italic;
 }
 
 /* Footer */
@@ -211,7 +168,7 @@ main:after {
   height: 100px;
 }
 
-/* about.ejs */
+/* About */
 .sub-page {
   display: flex;
   justify-content: center;
@@ -254,75 +211,6 @@ main:after {
   width: 70%;
 }
 
-/* Articles */
-.bellow-title-z {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 35vh;
-}
-.articles-list {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
-  gap: 30px;
-  width: 90%;
-}
-.articles-list-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  gap: 20px;
-  height: 272px;
-  width: 900px;
-}
-.articles-list-img,
-.articles-list-item-right {
-  width: 50%;
-  height: 100%;
-}
-.articles-list-item-right {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-direction: column;
-  border-bottom-color: #e2e2b6;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  line-height: 1.5;
-}
-.articles-list-item-right a {
-  color: #03346e;
-  font-size: 20px;
-  font-weight: 500;
-}
-.articles-list-item-date {
-  font-size: 15px;
-  color: #03346e;
-  margin-bottom: 20px;
-}
-.painting {
-  width: 100%;
-}
-h2 {
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
-/* Visually hidden but accessible to screen readers */
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-}
-
 /* Responsive Styles */
 @media (max-width: 1300px) {
   h1 {
@@ -330,16 +218,6 @@ h2 {
   }
   .content-article-title-image {
     width: 470px;
-  }
-  .articles-list-item {
-    height: 240px;
-    width: 100%;
-  }
-  .articles-list-item-subheadline {
-    display: none;
-  }
-  .articles-list-img {
-    object-fit: cover;
   }
 }
 @media (max-width: 800px) {
@@ -363,7 +241,7 @@ h2 {
     flex-direction: column;
     position: absolute;
     z-index: 100;
-    top: 60px; /* adjust as needed */
+    top: 60px;
     right: 1rem;
     background: white;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -374,9 +252,6 @@ h2 {
   }
   .menu-toggle {
     display: block;
-  }
-  .article {
-    font-size: 1.3rem;
   }
   .content-article {
     gap: 10px;
@@ -391,21 +266,8 @@ h2 {
   .content-article-title-image {
     width: 300px;
   }
-  #message {
-    width: 100%;
-  }
-  .articles-list-item {
-    height: 150px;
-    width: 100%;
-  }
-  .articles-list-item-right a {
-    font-size: 15px;
-  }
 }
 @media (max-width: 360px) {
-  .article {
-    font-size: 1.2rem;
-  }
   .content-article-title-image {
     width: 250px;
   }
