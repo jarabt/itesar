@@ -117,6 +117,7 @@ h2 {
   align-items: center;
   height: 70px;
   background-color: #6eacda;
+  margin-top: 50px;
 }
 .container-footer {
   display: grid;
