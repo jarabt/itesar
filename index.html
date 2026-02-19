@@ -31,7 +31,14 @@
       name="twitter:image"
       content="https://itesar.cz/images/jaroslav-tesar-vyvojar.png"
     />
-    <%- include('partials/links') %>
+    <link rel="shortcut icon" href="./images/favicon.ico" sizes="any" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -56,9 +63,22 @@
     </script>
   </head>
   <body>
-    <%- include('partials/cookie-banner') %>
     <main>
-      <header class="header"><%- include('./partials/navbar') %></header>
+      <header class="header">
+        <div class="container-header">
+          <a href="#title"
+            ><img
+              class="logo"
+              src="./images/logo.svg"
+              alt="Logo Jaroslav Tesař"
+          /></a>
+          <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+          <nav class="menu">
+            <a href="#title" class="menu-item">DOMŮ</a>
+            <a href="#contact" class="menu-item">KONTAKT</a>
+          </nav>
+        </div>
+      </header>
       <!-- Title -->
       <section id="title"></section>
       <div class="title-z">
@@ -102,7 +122,54 @@
           </div>
         </div>
       </div>
+      <!-- Contact -->
+      <section id="contact"></section>
+      <div class="title-z">
+        <h1><span class="highlight">KONTAKT</span></h1>
+      </div>
+      <div class="article">
+        <div class="content-article-text">
+          <i>TEL.: </i><a href="tel:+420723250858" class="my-a">723 250 858</a
+          ><br />
+          <i>EMAIL: </i
+          ><a href="mailto:info@itesar.cz" class="my-a">info@itesar.cz</a
+          ><br />
+          <i>ADRESA:</i> Pod Kosířem 71, Prostějov 79601<br />
+        </div>
+      </div>
     </main>
-    <%- include('partials/footer') %>
+    <footer class="footer">
+      <div class="container-footer">
+        <span class="copyright"
+          >Copyright &copy; <span id="year"></span> Jaroslav Tesař</span
+        >
+        <div class="social-media-icons">
+          <a
+            href="https://www.linkedin.com/in/ing-jaroslav-tesar"
+            aria-label="LinkedIn"
+          >
+            <img
+              src="./images/linkedin.svg"
+              class="logo"
+              style="height: 25px"
+              alt="LinkedIn icon"
+            />
+          </a>
+          <a href="https://x.com/jaroslavtesar" aria-label="X">
+            <img
+              src="./images/twitter-x.svg"
+              class="logo"
+              style="height: 25px"
+              alt="Twitter - X icon"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="./scripts/navbar.js"></script>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
