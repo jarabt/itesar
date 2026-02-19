@@ -35,7 +35,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/styles.css" />
@@ -63,103 +63,154 @@
     </script>
   </head>
   <body>
-    <main>
-      <header class="header">
-        <div class="container-header">
-          <a href="#title"
-            ><img
-              class="logo"
-              src="./images/logo.svg"
-              alt="Logo Jaroslav Tesař"
-          /></a>
-          <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
-          <nav class="menu">
-            <a href="#contact" class="menu-item">KONTAKT</a>
-          </nav>
-        </div>
-      </header>
-      <div id="title">
-        <h1>Ing. Jaroslav <span class="highlight">TESAŘ</span></h1>
-        <h2>programátor | webový vývojář</h2>
+    <div class="grain-overlay"></div>
+
+    <header class="header">
+      <div class="container-header">
+        <a href="#title" class="logo-link"
+          ><img
+            class="logo"
+            src="./images/logo.svg"
+            alt="Logo Jaroslav Tesař"
+        /></a>
+        <button class="menu-toggle" aria-label="Toggle menu">
+          <span class="menu-toggle-bar"></span>
+          <span class="menu-toggle-bar"></span>
+        </button>
+        <nav class="menu">
+          <a href="#contact" class="menu-item">Kontakt</a>
+        </nav>
       </div>
-      <div class="sub-page about-article">
-        <div class="content-article">
-          <div class="content-article-title">
-            <div class="content-article-title-image">
+    </header>
+
+    <main>
+      <section id="title" class="hero">
+        <div class="hero-inner">
+          <p class="hero-prefix anim-fade-up">Ing.</p>
+          <h1 class="hero-name anim-fade-up anim-delay-1">
+            Jaroslav<br /><span class="hero-surname">Tesař</span>
+          </h1>
+          <div class="hero-rule anim-fade-up anim-delay-2"></div>
+          <h2 class="hero-role anim-fade-up anim-delay-3">
+            programátor <span class="hero-sep">/</span> webový vývojář
+          </h2>
+        </div>
+        <div class="hero-scroll-hint anim-fade-up anim-delay-4">
+          <span class="hero-scroll-line"></span>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="about-grid">
+          <div class="about-photo-col anim-reveal">
+            <div class="about-photo-frame">
               <img
-                class="my-photo"
+                class="about-photo"
                 src="./images/jaroslav-tesar-vyvojar.png"
                 alt="Jaroslav Tesař – webový vývojář"
               />
             </div>
-            <div class="content-article-title-text">
-              <h2>"Ty děláš stránky? To dnes dělá každý."</h2>
-            </div>
           </div>
-          <div class="content-article-text">
-            <p>
-              <b
-                >Tohle se mě zeptal nedávno jeden majitel firmy tady v
-                Prostějově, při debatě o tom, že dělám weby.</b
-              >
-            </p>
-            <p>
-              Když jsem se rozhodl jít cestou samostatného podnikatele, měl jsem
-              za sebou 5 let praxe na pozici programátora v renomovaných
-              softwarových firmách na velmi sofistikovaných (nejen) webových
-              aplikacích. Věděl jsem, že mě po tomto rozhodnutí čeká spousta
-              učení se - změnil jsem některé technologické nástroje, ty jsem se
-              učil od základů. Dále osvojení si jiných technologií a oborů,
-              kolem kterých jsem doposud "prošel jen kolem". Jako je design,
-              některé věci na frontendu, online marketing... Věřil jsem a věřím,
-              že spolu s neustálým učením se, sledováním novinek a trendů tohle
-              nakonec lidé ocení a když k tomu přidám něco ze sebe, s tím, že mě
-              to baví, může to být fajn.
-            </p>
-            <div id="contact">
-              <b><i>TEL.: </i></b
-              ><a href="tel:+420723250858" class="my-a">723 250 858</a><br />
-              <b><i>EMAIL: </i></b
-              ><a href="mailto:info@itesar.cz" class="my-a">info@itesar.cz</a
-              ><br />
-              <b><i>ADRESA:</i></b> Pod Kosířem 71, Prostějov 79601
+          <div class="about-text-col">
+            <blockquote class="about-quote anim-reveal">
+              <p>"Ty děláš stránky? To dnes dělá každý."</p>
+            </blockquote>
+            <div class="about-body anim-reveal">
+              <p>
+                <strong
+                  >Tohle se mě zeptal nedávno jeden majitel firmy tady v
+                  Prostějově, při debatě o tom, že dělám weby.</strong
+                >
+              </p>
+              <p>
+                Když jsem se rozhodl jít cestou samostatného podnikatele, měl
+                jsem za sebou 5 let praxe na pozici programátora v renomovaných
+                softwarových firmách na velmi sofistikovaných (nejen) webových
+                aplikacích. Věděl jsem, že mě po tomto rozhodnutí čeká spousta
+                učení se - změnil jsem některé technologické nástroje, ty jsem
+                se učil od základů. Dále osvojení si jiných technologií a oborů,
+                kolem kterých jsem doposud "prošel jen kolem". Jako je design,
+                některé věci na frontendu, online marketing... Věřil jsem a
+                věřím, že spolu s neustálým učením se, sledováním novinek a
+                trendů tohle nakonec lidé ocení a když k tomu přidám něco ze
+                sebe, s tím, že mě to baví, může to být fajn.
+              </p>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="contact-inner">
+          <h3 class="contact-heading anim-reveal">Spojme se</h3>
+          <div class="contact-grid anim-reveal">
+            <a href="tel:+420723250858" class="contact-card">
+              <span class="contact-label">Tel</span>
+              <span class="contact-value">723 250 858</span>
+            </a>
+            <a href="mailto:info@itesar.cz" class="contact-card">
+              <span class="contact-label">Email</span>
+              <span class="contact-value">info@itesar.cz</span>
+            </a>
+            <div class="contact-card">
+              <span class="contact-label">Adresa</span>
+              <span class="contact-value"
+                >Pod Kosířem 71,<br />Prostějov 79601</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
     <footer class="footer">
       <div class="container-footer">
         <span class="copyright"
-          >Copyright &copy; <span id="year"></span> Jaroslav Tesař</span
+          >&copy; <span id="year"></span> Jaroslav Tesař</span
         >
         <div class="social-media-icons">
           <a
             href="https://www.linkedin.com/in/ing-jaroslav-tesar"
             aria-label="LinkedIn"
+            class="social-link"
           >
             <img
               src="./images/linkedin.svg"
-              class="logo"
-              style="height: 25px"
               alt="LinkedIn icon"
             />
           </a>
-          <a href="https://x.com/jaroslavtesar" aria-label="X">
+          <a
+            href="https://x.com/jaroslavtesar"
+            aria-label="X"
+            class="social-link"
+          >
             <img
               src="./images/twitter-x.svg"
-              class="logo"
-              style="height: 25px"
               alt="Twitter - X icon"
             />
           </a>
         </div>
       </div>
     </footer>
-    <script src="./scripts/navbar.js"></script>
 
+    <script src="./scripts/navbar.js"></script>
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
+
+      // Scroll-triggered reveal animations
+      const revealEls = document.querySelectorAll(".anim-reveal");
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("revealed");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.15 }
+      );
+      revealEls.forEach((el) => observer.observe(el));
     </script>
   </body>
 </html>
