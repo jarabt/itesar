@@ -31,52 +31,10 @@ body {
   height: 70px;
   width: 90%;
 }
-.menu-item {
-  text-decoration: none;
-  color: #000;
-  font-size: 19px;
-  font-weight: 500;
-  padding: 10px;
-  position: relative;
-  font-style: italic;
-}
-.menu-item::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 8px;
-  height: 2px;
-  width: 0;
-  background: black;
-  pointer-events: none;
-}
-.menu-item:hover::after {
-  width: 100%;
-}
-.menu-item:hover {
-  text-decoration: none;
-}
-.menu-item.active::after {
-  width: 100%;
-}
-.menu-item.active {
-  color: #6eacda;
-}
 .logo {
   width: 50px;
   padding-left: 10px;
   padding-right: 10px;
-}
-.menu {
-  display: flex;
-  gap: 1rem;
-}
-.menu-toggle {
-  display: none;
-  font-size: 33px;
-  background: none;
-  border: none;
-  cursor: pointer;
 }
 
 /* Title */
@@ -139,24 +97,5 @@ h2 {
 @media (max-width: 800px) {
   h1 {
     font-size: 35px;
-  }
-}
-@media (max-width: 650px) {
-  .menu {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    z-index: 100;
-    top: 60px;
-    right: 1rem;
-    background: white;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
-  }
-  .menu.open {
-    display: flex;
-  }
-  .menu-toggle {
-    display: block;
   }
 }
