@@ -1,3 +1,8 @@
 /* Global Styles */
+:root {
+  --blue: #6eacda;
+}
+
 body {
+  background-color: var(--blue);
 }
