@@ -24,3 +24,12 @@ h1 {
   align-items: center;
   height: 100vh;
 }
+
+.title {
+  display: flex;
+  flex-direction: row;
+}
+
+.title img {
+  width: 100px;
+}
