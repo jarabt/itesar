@@ -23,6 +23,13 @@ h1 {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  padding: 2rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 
 .title {
@@ -33,4 +40,8 @@ h1 {
 
 .title img {
   width: 80px;
+}
+
+.side {
+  width: 50%;
 }
