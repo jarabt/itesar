@@ -1,15 +1,19 @@
 @font-face {
-  font-family: 'Open Sauce Two';
-  src: url('../fonts/OpenSauceTwoVF.woff') format('woff');
+  font-family: "Open Sauce Two";
+  src: url("../fonts/OpenSauceTwoVF.woff") format("woff");
   font-weight: 100 900;
   font-style: normal;
 }
 
-/* Global Styles */
 :root {
   --blue: #6eacda;
 }
 
 body {
   background-color: var(--blue);
+  font-family: "Open Sauce Two", sans-serif;
+}
+
+h1 {
+  font-weight: 350;
 }
