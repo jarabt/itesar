@@ -17,3 +17,10 @@ body {
 h1 {
   font-weight: 350;
 }
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
