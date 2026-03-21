@@ -84,8 +84,10 @@ p {
 
 .social-media {
   display: flex;
+  justify-content: center;
+  gap: 50px;
 }
 
 .icon {
-  width: 35px;
+  width: 40px;
 }
