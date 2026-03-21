@@ -15,7 +15,13 @@ body {
 }
 
 h1 {
+  font-size: 3rem;
   font-weight: 350;
+  margin: 0px;
+}
+
+h2 {
+  margin: 0px;
 }
 
 .container {
@@ -41,7 +47,7 @@ h1 {
 }
 
 .logo {
-  width: 80px;
+  width: 100px;
 }
 
 .foto {
