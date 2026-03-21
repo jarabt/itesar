@@ -81,3 +81,11 @@ p {
   border-top: 1px solid black;
   border-bottom: 1px solid black;
 }
+
+.social-media {
+  display: flex;
+}
+
+.icon {
+  width: 35px;
+}
