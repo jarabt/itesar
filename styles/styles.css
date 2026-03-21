@@ -35,11 +35,15 @@ h1 {
 .title {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 50px;
 }
 
-.title img {
+.logo {
   width: 80px;
+}
+
+.foto {
+  width: 100%;
 }
 
 .side {
