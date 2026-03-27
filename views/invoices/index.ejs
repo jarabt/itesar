@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vydané faktury</title>
+  </head>
+  <body>
+    <h1>Vydané faktury</h1>
+    <a href="/invoices/add">Vytvořit fakturu</a>
+    <a href="/customers/add">Přidat odběratele</a>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Číslo faktury</th>
+          <th>Odběratel</th>
+          <th>Datum vystavení</th>
+          <th>Splatnost</th>
+          <th>Celková cena</th>
+          <th>Akce</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% if (invoices.length === 0) { %>
+          <tr>
+            <td colspan="6">Žádné faktury</td>
+          </tr>
+        <% } %>
+        <% invoices.forEach(invoice => { %>
+          <tr>
+            <td><%= invoice.invoice_number %></td>
+            <td><%= invoice.customer_name %></td>
+            <td><%= new Date(invoice.issue_date).toLocaleDateString("cs-CZ") %></td>
+            <td><%= new Date(invoice.due_date).toLocaleDateString("cs-CZ") %></td>
+            <td><%= Number(invoice.total_price).toLocaleString("cs-CZ") %> Kč</td>
+            <td><a href="/invoices/<%= invoice.id %>/pdf" target="_blank">PDF</a></td>
+          </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  </body>
+</html>

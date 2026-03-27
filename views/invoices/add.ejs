@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vytvořit fakturu</title>
+  </head>
+  <body>
+    <a href="/invoices">Zpět na faktury</a>
+    <h1>Vytvořit fakturu</h1>
+    <form action="/invoices" method="POST">
+      <div>
+        <label for="invoiceNumber">Číslo faktury</label>
+        <input type="text" id="invoiceNumber" name="invoiceNumber" required />
+      </div>
+      <div>
+        <label for="customerId">Odběratel</label>
+        <select id="customerId" name="customerId" required>
+          <option value="">-- Vyberte odběratele --</option>
+          <% customers.forEach(customer => { %>
+            <option value="<%= customer.id %>"><%= customer.name %></option>
+          <% }) %>
+        </select>
+      </div>
+      <div>
+        <label for="issueDate">Datum vystavení</label>
+        <input type="date" id="issueDate" name="issueDate" required />
+      </div>
+      <div>
+        <label for="taxDate">Datum zdanitelného plnění</label>
+        <input type="date" id="taxDate" name="taxDate" required />
+      </div>
+      <div>
+        <label for="dueDate">Splatnost</label>
+        <input type="date" id="dueDate" name="dueDate" required />
+      </div>
+
+      <h2>Položky</h2>
+      <div id="items">
+        <div class="item">
+          <input type="text" name="description" placeholder="Popis položky" required />
+          <input type="number" name="price" placeholder="Cena (Kč)" required />
+        </div>
+      </div>
+      <button type="button" id="addItem">Přidat položku</button>
+
+      <br /><br />
+      <button type="submit">Vytvořit fakturu</button>
+    </form>
+
+    <script>
+      document.getElementById("addItem").addEventListener("click", () => {
+        const container = document.getElementById("items");
+        const item = document.createElement("div");
+        item.className = "item";
+        item.innerHTML =
+          '<input type="text" name="description" placeholder="Popis položky" required />' +
+          '<input type="number" name="price" placeholder="Cena (Kč)" required />' +
+          '<button type="button" onclick="this.parentElement.remove()">Odebrat</button>';
+        container.appendChild(item);
+      });
+    </script>
+  </body>
+</html>

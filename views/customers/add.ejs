@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Přidat odběratele</title>
+  </head>
+  <body>
+    <a href="/invoices">Zpět na faktury</a>
+    <h1>Přidat odběratele</h1>
+    <form action="/customers" method="POST">
+      <div>
+        <label for="name">Jméno / Název</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+      <div>
+        <label for="ico">IČO</label>
+        <input type="text" id="ico" name="ico" required />
+      </div>
+      <div>
+        <label for="address">Adresa</label>
+        <input type="text" id="address" name="address" required />
+      </div>
+      <div>
+        <label for="postalCode">PSČ</label>
+        <input type="text" id="postalCode" name="postalCode" required />
+      </div>
+      <div>
+        <label for="city">Město</label>
+        <input type="text" id="city" name="city" required />
+      </div>
+      <div>
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" />
+      </div>
+      <div>
+        <label for="phone">Telefon</label>
+        <input type="text" id="phone" name="phone" />
+      </div>
+      <button type="submit">Uložit</button>
+    </form>
+  </body>
+</html>
