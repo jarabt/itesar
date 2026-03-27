@@ -1,0 +1,28 @@
+{
+  "name": "itesar",
+  "version": "1.0.0",
+  "description": "",
+  "licence": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "/srv/bin/primary_tech/node index.js",
+    "dev": "node --watch index.js",
+    "test": "node --test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jarabt/itesar.git"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jarabt/itesar/issues"
+  },
+  "homepage": "https://github.com/jarabt/itesar#readme",
+  "dependencies": {
+    "ejs": "^5.0.1",
+    "express": "^5.2.1"
+  }
+}
