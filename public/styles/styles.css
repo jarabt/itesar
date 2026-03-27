@@ -94,6 +94,19 @@ h2 {
   padding: 10px;
 }
 
+/* Invoices */
+.invoices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 10rem;
+  height: 70px;
+  z-index: 100;
+}
+
 /* Responsive Styles */
 @media (max-width: 1300px) {
   h1 {
