@@ -13,4 +13,4 @@ pool.on("error", (err) => {
   process.exit(1);
 });
 
-export { pool };
+export default pool;
