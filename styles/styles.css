@@ -2,7 +2,7 @@
 body {
   font-family: "Work Sans", sans-serif;
   margin: 0;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .my-a {
@@ -58,18 +58,75 @@ h2 {
 }
 
 .content {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-#projects {
-  padding-top: 1rem;
+  padding: 0 1rem 110px;
 }
 #contact {
-  padding-top: 1rem;
+  padding-top: 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  line-height: 1.8;
 }
-.content img {
+.content > a img {
   height: 25px;
   padding-top: 1rem;
+}
+
+/* Projects */
+.projects {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2.5rem 0 1rem;
+}
+.section-title {
+  margin: 0 0 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+.project-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+.project-thumb {
+  aspect-ratio: 16 / 10;
+  background: #eef4f9;
+  overflow: hidden;
+}
+.project-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.project-body {
+  padding: 1rem 1.25rem 1.25rem;
+}
+.project-body h4 {
+  margin: 0 0 0.35rem;
+  font-size: 1.05rem;
+  color: #6eacda;
+}
+.project-body p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.45;
 }
 
 /* Footer */
