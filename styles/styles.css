@@ -60,6 +60,17 @@ h2 {
 .content {
   padding-left: 1rem;
   padding-right: 1rem;
+  padding-bottom: 90px;
+}
+#services {
+  padding-top: 1rem;
+}
+#services ul {
+  margin: 0.5rem 0 0 0;
+  padding-left: 1.25rem;
+}
+#services li {
+  padding: 2px 0;
 }
 #projects {
   padding-top: 1rem;
