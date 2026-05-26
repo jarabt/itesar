@@ -2,7 +2,9 @@
 body {
   font-family: "Work Sans", sans-serif;
   margin: 0;
-  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .my-a {
@@ -60,7 +62,7 @@ h2 {
 .content {
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-bottom: 90px;
+  flex: 1;
 }
 #services {
   padding-top: 1rem;
@@ -85,9 +87,6 @@ h2 {
 
 /* Footer */
 .footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
