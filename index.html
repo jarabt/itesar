@@ -35,7 +35,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/styles.css" />
@@ -104,58 +104,152 @@
     ></script>
   </head>
   <body>
-    <header class="header">
-      <div class="container-header">
-        <a href="#title"
-          ><img class="logo" src="./images/logo.svg" alt="Logo Jaroslav Tesař"
-        /></a>
+    <header class="site">
+      <div class="wrap header-row">
+        <a href="#" class="logo-link" aria-label="Jaroslav Tesař">
+          <img class="logo" src="./images/logo.svg" alt="Logo Jaroslav Tesař" />
+          <span class="logo-mark">Jaroslav Tesař</span>
+        </a>
+        <span class="availability">
+          <span class="dot"></span>
+          Přijímám zakázky
+        </span>
       </div>
     </header>
-    <div id="title">
-      <h1>Tvorba webových stránek a aplikací</h1>
-      <h2>Ing. Jaroslav Tesař</h2>
-    </div>
-    <div class="content">
-      <div id="services">
-        <b><i>CO NABÍZÍM:</i></b>
-        <ul>
-          <li>Webové stránky na míru – firemní prezentace, portfolia, mikrostránky</li>
-          <li>Webové aplikace a nástroje pro automatizaci</li>
-          <li>Úpravy, údržba a rozvoj existujících webů</li>
-          <li>Konzultace a optimalizace – rychlost, SEO, přístupnost</li>
-        </ul>
-      </div>
-      <div id="projects">
-        <b><i>PROJEKTY: </i></b
-        ><a href="https://rzklima.cz" class="my-a">rzklima.cz</a>,
-        <a href="https://plosina-prostejov.cz" class="my-a">plosina-prostejov.cz</a>,
-        <a href="https://myridingarena.com" class="my-a">myridingarena.com</a>
-      </div>
-      <div id="contact">
-        <b><i>TEL.: </i></b
-        ><a href="tel:+420723250858" class="my-a">723 250 858</a><br />
-        <b><i>EMAIL: </i></b
-        ><a href="mailto:info@itesar.cz" class="my-a">info@itesar.cz</a><br />
-        <b><i>ADRESA:</i></b> Pod Kosířem 71, Prostějov 79601<br />
-        <b><i>IČO:</i></b> 23511559
-      </div>
-      <a
-        href="https://www.linkedin.com/in/ing-jaroslav-tesar"
-        aria-label="LinkedIn"
-      >
-        <img src="./images/linkedin.svg" alt="LinkedIn icon" />
-      </a>
-    </div>
 
-    <footer class="footer">
-      <div class="container-footer">
-        <span class="copyright"
-          >Copyright &copy; <span id="year"></span> Jaroslav Tesař</span
-        >
+    <main>
+      <section class="hero wrap">
+        <div class="eyebrow reveal d-1">Ing. Jaroslav Tesař — Vývojář</div>
+        <h1 class="headline reveal d-2">
+          Tvorba <em>webových</em> stránek<br />
+          a aplikací na míru.
+        </h1>
+        <p class="hero-sub reveal d-3">
+          Programátor s praxí v softwarových firmách. Stavím weby, které jsou
+          rychlé, přehledné a dlouhodobě udržovatelné — od jednoduché prezentace
+          po složitější webové nástroje.
+        </p>
+        <div class="hero-meta reveal d-4">
+          <span><strong>Prostějov</strong> · Česká republika</span>
+          <span><strong>Zákazníci</strong> v ČR i zahraničí</span>
+          <span><strong>IČO</strong> 23511559</span>
+        </div>
+      </section>
+
+      <section class="section wrap" id="services">
+        <div class="section-head">
+          <span class="section-num">01 — Služby</span>
+          <h2 class="section-title">Co nabízím</h2>
+        </div>
+        <ul class="services-list">
+          <li class="service">
+            <span class="service-num">01</span>
+            <span class="service-name">Webové stránky na míru</span>
+            <span class="service-tag">Prezentace · Portfolia · Mikrostránky</span>
+          </li>
+          <li class="service">
+            <span class="service-num">02</span>
+            <span class="service-name">Webové aplikace a nástroje</span>
+            <span class="service-tag">Automatizace · Interní systémy</span>
+          </li>
+          <li class="service">
+            <span class="service-num">03</span>
+            <span class="service-name">Údržba a rozvoj existujících webů</span>
+            <span class="service-tag">Úpravy · Migrace · Refactoring</span>
+          </li>
+          <li class="service">
+            <span class="service-num">04</span>
+            <span class="service-name">Konzultace a optimalizace</span>
+            <span class="service-tag">Rychlost · SEO · Přístupnost</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section wrap" id="projects">
+        <div class="section-head">
+          <span class="section-num">02 — Realizace</span>
+          <h2 class="section-title">Vybrané projekty</h2>
+        </div>
+        <div class="projects">
+          <a class="project" href="https://rzklima.cz" target="_blank" rel="noopener">
+            <span class="project-num">→ 01</span>
+            <span class="project-title">rzklima.cz</span>
+            <span class="project-meta">Klimatizace · Firemní web</span>
+            <span class="project-arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </span>
+          </a>
+          <a class="project" href="https://plosina-prostejov.cz" target="_blank" rel="noopener">
+            <span class="project-num">→ 02</span>
+            <span class="project-title">plosina-prostejov.cz</span>
+            <span class="project-meta">Pronájem plošin · Služby</span>
+            <span class="project-arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </span>
+          </a>
+          <a class="project" href="https://myridingarena.com" target="_blank" rel="noopener">
+            <span class="project-num">→ 03</span>
+            <span class="project-title">myridingarena.com</span>
+            <span class="project-meta">Webová aplikace · EN</span>
+            <span class="project-arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </section>
+
+      <section class="contact wrap" id="contact">
+        <div class="section-head">
+          <span class="section-num">03 — Kontakt</span>
+          <h2 class="section-title">Spolupráce</h2>
+        </div>
+        <p class="contact-statement">
+          Máte projekt v hlavě? <em>Napište mi.</em>
+        </p>
+        <div class="contact-grid">
+          <div class="contact-item">
+            <span class="contact-label">Email</span>
+            <a class="contact-value" href="mailto:info@itesar.cz">info@itesar.cz</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">Telefon</span>
+            <a class="contact-value" href="tel:+420723250858">+420 723 250 858</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">Adresa</span>
+            <span class="contact-value">Pod Kosířem 71<br />796 01 Prostějov</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">IČO</span>
+            <span class="contact-value">23511559</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site">
+      <div class="wrap footer-row">
+        <span>© <span id="year"></span> Jaroslav Tesař</span>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/ing-jaroslav-tesar" aria-label="LinkedIn" target="_blank" rel="noopener">
+            <img src="./images/linkedin.svg" alt="" />
+          </a>
+          <a href="https://x.com/jaroslavtesar" aria-label="X / Twitter" target="_blank" rel="noopener">
+            <img src="./images/twitter-x.svg" alt="" />
+          </a>
+        </div>
       </div>
     </footer>
 
-    <script src="./scripts/navbar.js"></script>
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
     </script>
