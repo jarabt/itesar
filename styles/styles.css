@@ -459,6 +459,7 @@ footer.site {
   align-items: center;
   gap: 1rem;
   flex-wrap: wrap;
+  padding: 0;
   font-family: "JetBrains Mono", monospace;
   font-size: 0.72rem;
   letter-spacing: 0.1em;
