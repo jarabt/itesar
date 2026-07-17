@@ -56,12 +56,14 @@ footer.site {
 .mark {
   background-image: linear-gradient(
     180deg,
-    transparent 0%, transparent 52%,
-    var(--marker) 52%, var(--marker) 90%,
-    transparent 90%, transparent 100%
+    transparent 0%,
+    transparent 35%,
+    var(--marker) 35%,
+    var(--marker) 65%,
+    transparent 65%,
+    transparent 100%
   );
   padding: 0 0.15em;
-  transform: rotate(-0.4deg);
   display: inline-block;
 }
 
@@ -132,9 +134,15 @@ header.site {
   animation: pulse 2.4s infinite;
 }
 @keyframes pulse {
-  0%   { box-shadow: 0 0 0 0 rgba(110, 172, 218, 0.7); }
-  70%  { box-shadow: 0 0 0 9px rgba(110, 172, 218, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(110, 172, 218, 0); }
+  0% {
+    box-shadow: 0 0 0 0 rgba(110, 172, 218, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 9px rgba(110, 172, 218, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(110, 172, 218, 0);
+  }
 }
 
 /* ── Hero ───────────────────────────────────────────── */
@@ -362,7 +370,9 @@ h2.section-title {
   border: 1.5px solid var(--ink);
   display: grid;
   place-items: center;
-  transition: transform 0.4s ease, background 0.4s ease;
+  transition:
+    transform 0.4s ease,
+    background 0.4s ease;
 }
 .project:hover .project-arrow {
   background: var(--marker);
@@ -424,8 +434,10 @@ a.contact-value {
   padding: 0 0.15em;
   background-image: linear-gradient(
     180deg,
-    transparent 0%, transparent 78%,
-    var(--marker) 78%, var(--marker) 100%
+    transparent 0%,
+    transparent 78%,
+    var(--marker) 78%,
+    var(--marker) 100%
   );
   background-size: 0% 100%;
   background-repeat: no-repeat;
@@ -481,26 +493,52 @@ footer.site {
   transform: translateY(18px);
   animation: rise 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) forwards;
 }
-.d-1 { animation-delay: 0.05s; }
-.d-2 { animation-delay: 0.18s; }
-.d-3 { animation-delay: 0.32s; }
-.d-4 { animation-delay: 0.46s; }
+.d-1 {
+  animation-delay: 0.05s;
+}
+.d-2 {
+  animation-delay: 0.18s;
+}
+.d-3 {
+  animation-delay: 0.32s;
+}
+.d-4 {
+  animation-delay: 0.46s;
+}
 @keyframes rise {
-  to { opacity: 1; transform: translateY(0); }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* ── Responsive ─────────────────────────────────────── */
 @media (max-width: 720px) {
-  .logo { width: 72px; }
-  .signature { display: none; }
-  .availability { padding: 0.4rem 0.7rem; font-size: 0.62rem; }
-  .section-head { grid-template-columns: 3rem 1fr; gap: 0.75rem; }
+  .logo {
+    width: 72px;
+  }
+  .signature {
+    display: none;
+  }
+  .availability {
+    padding: 0.4rem 0.7rem;
+    font-size: 0.62rem;
+  }
+  .section-head {
+    grid-template-columns: 3rem 1fr;
+    gap: 0.75rem;
+  }
   .service,
   .project {
     grid-template-columns: 3rem 1fr auto;
     gap: 0.75rem;
   }
   .service-tag,
-  .project-meta { display: none; }
-  .hero-meta { gap: 0.5rem 1.25rem; font-size: 0.7rem; }
+  .project-meta {
+    display: none;
+  }
+  .hero-meta {
+    gap: 0.5rem 1.25rem;
+    font-size: 0.7rem;
+  }
 }
