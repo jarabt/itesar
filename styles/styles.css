@@ -175,6 +175,27 @@ h2 {
 #contact {
   padding-top: 1rem;
 }
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 0.75rem;
+}
+.contact-card {
+  border: 1px solid #6eacda;
+  padding: 1.25rem 1.25rem 1rem;
+}
+.contact-card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.contact-card p,
+.contact-card a {
+  margin: 0;
+  line-height: 1.4;
+  display: block;
+}
 .content img {
   height: 25px;
   padding-top: 1rem;
