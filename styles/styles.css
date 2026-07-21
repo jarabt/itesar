@@ -82,6 +82,15 @@ h2 {
   border: 1px solid #6eacda;
   padding: 1.25rem 1.25rem 1rem;
 }
+a.service-card {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: background-color 0.2s ease;
+}
+a.service-card:hover {
+  background-color: #6eacda;
+}
 .service-card h3 {
   margin: 0 0 0.5rem;
   font-size: 1.15rem;
