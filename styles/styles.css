@@ -91,6 +91,28 @@ h2 {
     grid-template-columns: 1fr;
   }
 }
+#why {
+  padding-top: 1rem;
+}
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-top: 0.75rem;
+}
+.why-card {
+  border: 1px solid #6eacda;
+  padding: 1.25rem 1.25rem 1rem;
+}
+.why-card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.why-card p {
+  margin: 0;
+  line-height: 1.4;
+}
 #projects {
   padding-top: 1rem;
 }
