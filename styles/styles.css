@@ -65,7 +65,7 @@ h2 {
   flex: 1;
 }
 #services {
-  padding-top: 1rem;
+  padding-top: 2.75rem;
 }
 .services-grid {
   display: grid;
@@ -92,7 +92,7 @@ h2 {
   }
 }
 #why {
-  padding-top: 1rem;
+  padding-top: 2.75rem;
 }
 .why-grid {
   display: grid;
@@ -121,7 +121,7 @@ h2 {
   line-height: 1.4;
 }
 #process {
-  padding-top: 1rem;
+  padding-top: 2.75rem;
 }
 .process-grid {
   display: grid;
@@ -151,7 +151,7 @@ h2 {
   line-height: 1.4;
 }
 #projects {
-  padding-top: 1rem;
+  padding-top: 2.75rem;
 }
 .projects-grid {
   display: grid;
@@ -180,7 +180,7 @@ h2 {
   line-height: 1.4;
 }
 #contact {
-  padding-top: 1rem;
+  padding-top: 2.75rem;
 }
 .contact-grid {
   display: grid;
