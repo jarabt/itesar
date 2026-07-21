@@ -104,6 +104,13 @@ h2 {
   border: 1px solid #6eacda;
   padding: 1.25rem 1.25rem 1rem;
 }
+.why-icon {
+  display: block;
+  width: 28px;
+  height: 28px;
+  color: #6eacda;
+  margin-bottom: 0.6rem;
+}
 .why-card h3 {
   margin: 0 0 0.5rem;
   font-size: 1.1rem;
