@@ -64,6 +64,10 @@ h2 {
   padding-right: 1rem;
   flex: 1;
 }
+#intro {
+  padding-top: 2.75rem;
+}
+
 #services {
   padding-top: 2.75rem;
 }
